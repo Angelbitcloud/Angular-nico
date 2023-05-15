@@ -1,0 +1,126 @@
+@import "../node_modules/primeng/resources/themes/soho-light/theme.css";
+@import "primeicons/primeicons.css";
+
+
+
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+}
+
+body{
+    background-color: var( --surface-b );
+    font-family: var(--font-family);
+    margin: 0 !important;
+}
+
+.grupo-1{
+    display: grid;
+    margin-top: 83px;
+    grid-gap: 10px; 
+}
+
+.grupo-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,410px),1fr));
+    grid-gap: -50px;
+}
+
+.grupo-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,340px),1fr));
+    margin-top: 83px;
+    grid-gap: 10px; 
+}
+.cards6{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.bot5{
+    background-color: blueviolet;
+    width: 100%;
+    height: 700px;
+}
+
+
+.text{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+.boxTop{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.boxTop3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.textTopDecoration2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 90px;
+    margin-top: 60px;
+    color: rgb(73, 73, 73);
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+.textTopDecoration3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    margin-top: -100px;
+    color: rgb(124, 124, 124);
+    font-weight: normal;
+    animation: fadeInDown;
+    animation-duration: 3s;
+}
+
+
+.img2{
+    width: 130px;
+    height: 130px;
+}
+
+.img5{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+.imgContainer{
+    display: grid;
+    justify-content: end;
+    width: 100vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin-left: 850px;
+}
+
+.imgbox2 {
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
