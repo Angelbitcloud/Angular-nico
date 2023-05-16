@@ -1,8 +1,8 @@
+
 <div class="grupo-1">
     <div class="imgContainer">
         <img alt="Card" class="img3" src="assets/img/top.png">
     </div>
-    
     <div>
         <span class="text">
             <p class="textTopDecoration2">Bases De Datos</p> 
@@ -11,22 +11,6 @@
     </div>
 </div>
 
-<div class="boxTop3">
-    <div class="grupo-2">
-        <div class="card">
-            <div class="imgbox2"><img alt="Card" class="img2" src="assets/img/proyecto.png"></div>
-            <p class="font3">Basico</p>
-        </div>
-        <div class="card">
-            <div class="imgbox2"><img alt="Card" class="img2" src="assets/img/software (1).png"></div>
-            <p class="font3">Intermedio</p>
-        </div>
-        <div class="card">
-            <div class="imgbox2"><img alt="Card" class="img2" src="assets/img/software.png"></div>
-            <p class="font3">Avanzado</p>
-        </div>
-    </div>
-</div>
 
 <hr>
 
@@ -40,7 +24,7 @@
                     • Show 
                     • Drop </p>
                     <ng-template pTemplate="footer">
-                        <p-button  pRipple label="Ver" color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
+                        <p-button  pRipple label="Iniciar Test" (click)="redirigir('vista1')"  color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right" ></p-button>
                     </ng-template>
         </p-card>
         <p-card header="CREAR Y ELIMINAR TABLAS" class="cardtitle" [style]="{ width: '340px'  }">
@@ -51,7 +35,7 @@
                     • Drop Table  
                 </p>
                 <ng-template pTemplate="footer">
-                    <p-button  pRipple label="Ver" color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
+                    <p-button  pRipple label="Iniciar Test" (click)="redirigir('vista2')"  color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
                 </ng-template>    
         </p-card>
         <p-card header="CREAR Y OBTENER REGISTROS" class="cardtitle" [style]="{ width: '340px' }">
@@ -64,7 +48,7 @@
                     • Delete
                 </p>
                 <ng-template pTemplate="footer">
-                    <p-button  pRipple label="Ver" color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
+                    <p-button  pRipple label="Iniciar Test" (click)="redirigir('vista3')"  color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
                 </ng-template>
         </p-card>
         <p-card header="PRIMARY KEY Y FOREIGN KEY" class="cardtitle" [style]="{ width: '340px' }" >
@@ -75,7 +59,7 @@
                     • Foreign Key
                 </p>
                 <ng-template pTemplate="footer">
-                    <p-button  pRipple label="Ver" color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
+                    <p-button  pRipple label="Iniciar Test" (click)="redirigir('vista4')"  color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
                 </ng-template>
         </p-card>
         <p-card header="MANEJO DE TIPOS DE DATOS" class="cardtitle" [style]="{ width: '340px' }">
@@ -88,7 +72,7 @@
                     • Date
                 </p>
                 <ng-template pTemplate="footer">
-                    <p-button  pRipple label="Ver" color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
+                    <p-button  pRipple label="Iniciar Test" (click)="redirigir('vista5')"  color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
                 </ng-template>
         </p-card>
         <p-card header="FUNCIONES EN LAS TABLAS" class="cardtitle" [style]="{ width: '340px' }">
@@ -101,7 +85,7 @@
                     • Agrupamiento 
                 </p>
                 <ng-template pTemplate="footer">
-                    <p-button  pRipple label="Ver" color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
+                    <p-button  pRipple label="Iniciar Test" (click)="redirigir('vista6')"  color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
                 </ng-template>
         </p-card>
         <p-card header="ALTERACIONES DE LAS TABLAS" class="cardtitle" [style]="{ width: '340px' }"  >
@@ -113,7 +97,7 @@
                 • Table Rename
             </p>
             <ng-template pTemplate="footer">
-                <p-button  pRipple label="Ver" color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
+                <p-button  pRipple label="Iniciar Test" (click)="redirigir('vista7')"  color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
             </ng-template>
         </p-card>
         <p-card header="TIPOS DE JOINS Y SUS USOS" class="cardtitle" [style]="{ width: '340px' }">
@@ -126,7 +110,7 @@
             
                 </p>
                 <ng-template pTemplate="footer">
-                    <p-button  pRipple label="Ver" color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
+                    <p-button  pRipple label="Iniciar Test" (click)="redirigir('vista8')"  color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
                 </ng-template>
         </p-card>
         <p-card header="CREACION DE SUBCONSULTAS" class="cardtitle" [style]="{ width: '340px' }">
@@ -138,7 +122,7 @@
                     
                 </p>
                 <ng-template pTemplate="footer">
-                    <p-button  pRipple label="Ver" color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
+                    <p-button  pRipple label="Iniciar Test" (click)="redirigir('vista9')"  color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
                 </ng-template>
         </p-card>
         <p-card header="HERRAMIENTA PRACTICA LOCAL" class="cardtitle" [style]="{ width: '340px' }">
@@ -148,10 +132,18 @@
                 <p>• Ingresa para probar tus habilidades
                 </p>
                 <ng-template pTemplate="footer">
-                    <p-button  pRipple label="Ver" color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
+                    <p-button  pRipple label="Iniciar Test" color="#BC66F7" styleClass="p-button-raised " icon="pi pi-check" iconPos="right"></p-button>
                 </ng-template>
         </p-card>
     </div>
 </div>
 
 <hr>
+
+<footer class="pie-pagina">
+    <div class="box">
+        <div>
+            <small>&copy; 2023 <b>Bases De Datos Para Novatos</b>- Todos los Derechos Reservados.</small>
+        </div>
+    </div>
+</footer>

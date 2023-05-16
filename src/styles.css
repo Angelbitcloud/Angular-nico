@@ -1,7 +1,6 @@
 @import "../node_modules/primeng/resources/themes/soho-light/theme.css";
 @import "primeicons/primeicons.css";
-
-
+@import "primeicons/primeicons.css";
 
 
 .head {
@@ -36,20 +35,6 @@ body{
     margin-top: 83px;
     grid-gap: 10px; 
 }
-.cards6{
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-
-.bot5{
-    background-color: blueviolet;
-    width: 100%;
-    height: 700px;
-}
-
 
 .text{
     position: absolute;
@@ -65,8 +50,22 @@ body{
     margin-right: 70px;
 }
 
+.boxTop2{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 .boxTop3{
     margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.boxTop4{
+    margin-top: 150px;
     margin-bottom: 50px;
     padding-left: 250px;
     padding-right: 250px;
@@ -91,10 +90,19 @@ body{
     animation-duration: 3s;
 }
 
+.img1{
+    width: 100px;
+    height: 150px;
+}
 
 .img2{
     width: 130px;
     height: 130px;
+}
+
+.img4{
+    width: 70px;
+    height: 70px;
 }
 
 .img5{
@@ -102,7 +110,6 @@ body{
     height: 250px;
     border-radius: 10px;
 }
-
 
 .imgContainer{
     display: grid;
@@ -121,6 +128,97 @@ body{
 .card{
     display: grid;
     justify-items: center;
+
+}
+
+.bot5{
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+}
+
+.botones{
+    display: grid;
+    width: 200px;
+    height: 200px;
     align-items: center;
+    justify-items: center;
+}
+
+.botones2{
+    display: grid;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-items: center;
+}
+
+.botones3{
+    display: grid;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-items: center;
+}
+
+.texto{
+    width: 100%;
+    height: 150px;
+}
+
+.span1{
+    font-size: 35px;
     text-align: center;
+}
+
+.boxdrag{
+    background-color: aqua;
+    border-radius: 5px;
+    border-color: aqua;
+    width: 100%;
+    height: 650px;
+}
+
+.grupo-4{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(min(100%,200px),1fr));
+    align-items: center;
+    grid-gap: 10px;
+    
+}
+
+.grupo-5 {
+    display: grid;
+    grid-template-columns: minmax(200px, 200PX) minmax(100px, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.grupo-6{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(min(100%,100px),1fr));
+    grid-gap: 10px;
+    margin-top: 250px;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/* footer */
+.pie-pagina{
+    width: 100%;
+    background-color: rgba(244, 244, 244, 0.896);
+    text-align: center;
+    padding: 10px 15px;
+    bottom: 0;
+    font-size: 1rem;
+}
+
+.box{
+    margin-top: 50px;
+    background-color: antiquewhite;
 }

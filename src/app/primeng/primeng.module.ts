@@ -13,7 +13,7 @@ import { CardModule } from 'primeng/card';
     ButtonModule,
     MenubarModule,
     AutoCompleteModule,
-    CardModule
+    CardModule,
   ],
 })
 export class PrimengModule { }

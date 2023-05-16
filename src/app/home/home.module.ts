@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LadingPageComponent } from './lading-page/lading-page.component';
-import { BasicoComponent } from './modulos-apredizaje/basico/basico.component';
-import { IntermedioComponent } from './modulos-apredizaje/intermedio/intermedio.component';
-import { AvanzadoComponent } from './modulos-apredizaje/avanzado/avanzado.component';
+import { CrearTablaComponent } from './modulos-apredizaje/crear-tabla/crear-tabla';
+import { CrearRegistrosComponent } from './modulos-apredizaje/crear-registros/crear-registros';
+import { CrearDbComponent } from './modulos-apredizaje/crear-db/crear-db';
 import { HomeRoutingModule } from './home-routing.module';
 import { PrimengModule } from '../primeng/primeng.module';
 import { KeysComponent } from './modulos-apredizaje/keys/keys.component';
@@ -19,9 +19,9 @@ import { SubconsultasComponent } from './modulos-apredizaje/subconsultas/subcons
 @NgModule({
   declarations: [
     LadingPageComponent,
-    BasicoComponent,
-    IntermedioComponent,
-    AvanzadoComponent,
+    CrearTablaComponent,
+    CrearRegistrosComponent,
+    CrearDbComponent,
     KeysComponent,
     TiposDatosComponent,
     FuncionesTablasComponent,
