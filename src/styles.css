@@ -167,7 +167,7 @@ body{
 }
 
 .span1{
-    font-size: 35px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -221,4 +221,8 @@ body{
 .box{
     margin-top: 50px;
     background-color: antiquewhite;
+}
+
+.textI{
+    margin-top: -35px;
 }
