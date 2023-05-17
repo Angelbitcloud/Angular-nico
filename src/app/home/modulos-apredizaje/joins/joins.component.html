@@ -1,1 +1,87 @@
-<p>joins works!</p>
+<div class="boxTop4">
+    <p class="title">Uso Del Create y Drop en Tablas</p>
+</div>
+
+<div class="boxTop2">
+    <div class="grupo-5">
+        <div class="grupo-6">
+            <div class="botones">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right">
+                    <ng-template pTemplate="botonicon">
+                        <img alt="boton icon" class="img4" src="assets/img/crear.png" />
+                    </ng-template>
+                </p-button>
+                <p class="textI">Inner Join</p>
+            </div>
+            <div class="botones2">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right">
+                    <ng-template pTemplate="botonicon">
+                        <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
+                    </ng-template>
+                </p-button>
+                <p class="textI">Right Join </p>
+            </div>
+            <div class="botones3">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right">
+                    <ng-template pTemplate="botonicon">
+                        <img alt="boton icon" class="img4" src="assets/img/show.png" />
+                    </ng-template>
+                </p-button>
+                <p class="textI">Left Join</p>
+            </div>
+        </div>
+        <div class="grupo-4">
+            <div class="texto">
+                <p class="span1">
+                    En el contexto de las bases de datos relacionales, los joins se utilizan para combinar filas de dos
+                    o más tablas basándose en una condición de igualdad entre las columnas relacionadas. Los joins
+                    permiten consultar y obtener conjuntos de datos más completos y significativos al relacionar
+                    información de múltiples tablas en pocas palabras los joins nos permiten:
+                    <br />
+                    1. Combinar datos de tablas relacionadas: Los joins permiten unir filas de diferentes tablas para
+                    combinar información y obtener detalles completos de entidades relacionadas, como clientes y
+                    pedidos.
+                    <br />
+                    2. Recuperar datos relacionados: Los joins se utilizan para obtener información relacionada de
+                    diferentes tablas mediante el uso de claves primarias y claves foráneas que establecen la conexión
+                    entre ellas.
+                    <br />
+                    3. Combinar y filtrar datos: Los joins permiten combinar y filtrar datos en base a condiciones
+                    específicas, como igualdad, mayor que, menor que, etc., para obtener solo los resultados deseados.
+                </p>
+            </div>
+            <div class="boxdrag row">
+                <div class="boxDrop">
+                    <h2 class="card-title">Palabras Clave</h2>
+                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="listNumbers1"
+                        [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="drop($event)">
+                        <div cdkDrag class="block block-1" *ngFor="let n of listNumbers1">
+                            <span>{{n}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxDrop">
+                    <h2 class="card-title">Ordene Aqui</h2>
+                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="listNumbers2"
+                        [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="drop($event)">
+                        <div cdkDrag class="block block-2" *ngFor="let n of listNumbers2">
+                            <span>{{n}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="pie-pagina">
+    <div class="box">
+        <div>
+            <small>&copy; 2023 <b>Bases De Datos Para Novatos</b>- Todos los Derechos
+                Reservados.</small>
+        </div>
+    </div>
+</footer>

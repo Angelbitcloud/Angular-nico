@@ -1,3 +1,4 @@
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -32,7 +33,8 @@ import { SubconsultasComponent } from './modulos-apredizaje/subconsultas/subcons
   imports: [
     CommonModule,
     HomeRoutingModule,
-    PrimengModule
+    PrimengModule,
+    DragDropModule
   ]
 })
 export class HomeModule { }

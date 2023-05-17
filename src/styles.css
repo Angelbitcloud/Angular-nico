@@ -51,7 +51,7 @@ body{
 }
 
 .boxTop2{
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 30px;
     margin-left: 30px;
     margin-right: 30px;
@@ -66,7 +66,7 @@ body{
 
 .boxTop4{
     margin-top: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding-left: 250px;
     padding-right: 250px;
 }
@@ -172,11 +172,13 @@ body{
 }
 
 .boxdrag{
-    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,500px),1fr));
     border-radius: 5px;
-    border-color: aqua;
+    grid-gap: 10px;
     width: 100%;
     height: 650px;
+    justify-content: center;
 }
 
 .grupo-4{
@@ -225,4 +227,55 @@ body{
 
 .textI{
     margin-top: -35px;
+}
+
+
+
+
+
+
+
+
+
+
+.block {
+    display: inline-block; /* Ajusta el tamaño al contenido */
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000;
+    
+}
+
+.block-1{
+    background: rgb(114,84,240);
+    border-radius: 5px;
+}
+
+.block-2{
+    background: rgb(97,169,254);
+    border-radius: 5px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.boxContent{
+    background-color: white;
+    padding: 10px;
+    height: 500px;
+}
+
+.boxDrop{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }

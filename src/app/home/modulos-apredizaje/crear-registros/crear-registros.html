@@ -1,2 +1,92 @@
-<div class="doce"><p>intermedio works!</p></div>
+<div class="boxTop4">
+    <p class="title">Uso Del Create y Drop en Tablas</p>
+</div>
 
+<div class="boxTop2">
+    <div class="grupo-5">
+        <div class="grupo-6">
+            <div class="botones">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right">
+                    <ng-template pTemplate="botonicon">
+                        <img alt="boton icon" class="img4" src="assets/img/crear.png" />
+                    </ng-template>
+                </p-button>
+                <p class="textI">Insert</p>
+            </div>
+            <div class="botones2">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right">
+                    <ng-template pTemplate="botonicon">
+                        <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
+                    </ng-template>
+                </p-button>
+                <p class="textI">Select</p>
+            </div>
+            <div class="botones3">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right">
+                    <ng-template pTemplate="botonicon">
+                        <img alt="boton icon" class="img4" src="assets/img/show.png" />
+                    </ng-template>
+                </p-button>
+                <p class="textI">Where</p>
+            </div>
+            <div class="botones2">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right">
+                    <ng-template pTemplate="botonicon">
+                        <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
+                    </ng-template>
+                </p-button>
+                <p class="textI">Delete</p>
+            </div>
+        </div>
+        <div class="grupo-4">
+            <div class="texto">
+                <p class="span1">
+                    Un registro está compuesto por campos o columnas, donde cada campo
+                    contiene un dato específico que describe una característica de la
+                    entidad representada por el registro. Por ejemplo, en una tabla de
+                    clientes, un registro podría contener campos como el nombre, la
+                    dirección, el correo electrónico y el número de teléfono de un cliente
+                    en particular.
+                    <br />
+                    Los registros en una base de datos son la unidad fundamental para
+                    almacenar y recuperar información. Pueden ser creados, modificados,
+                    eliminados y consultados mediante operaciones de inserción,
+                    actualización, eliminación y consulta, respectivamente.
+                </p>
+            </div>
+            <div class="boxdrag row">
+                <div class="boxDrop">
+                    <h2 class="card-title">Palabras Clave</h2>
+                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="listNumbers1"
+                        [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="drop($event)">
+                        <div cdkDrag class="block block-1" *ngFor="let n of listNumbers1">
+                            <span>{{n}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxDrop">
+                    <h2 class="card-title">Ordene Aqui</h2>
+                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="listNumbers2"
+                        [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="drop($event)">
+                        <div cdkDrag class="block block-2" *ngFor="let n of listNumbers2">
+                            <span>{{n}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="pie-pagina">
+    <div class="box">
+        <div>
+            <small>&copy; 2023 <b>Bases De Datos Para Novatos</b>- Todos los Derechos
+                Reservados.</small>
+        </div>
+    </div>
+</footer>
