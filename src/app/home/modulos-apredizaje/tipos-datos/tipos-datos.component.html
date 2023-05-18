@@ -1,1 +1,86 @@
-<p>tipos-datos works!</p>
+<div class="boxTop4">
+    <p class="title">Tipos de Datos</p>
+</div>
+
+<div class="boxTop2">
+    <div class="grupo-5">
+        <div class="grupo-6">
+            <div class="botones">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right">
+                    <ng-template pTemplate="botonicon">
+                        <img alt="boton icon" class="img4" src="assets/img/crear.png" />
+                    </ng-template>
+                </p-button>
+                <p class="textI">Enteros</p>
+            </div>
+            <div class="botones">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right">
+                    <ng-template pTemplate="botonicon">
+                        <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
+                    </ng-template>
+                </p-button>
+                <p class="textI">Decimal</p>
+            </div>
+            <div class="botones">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right">
+                    <ng-template pTemplate="botonicon">
+                        <img alt="boton icon" class="img4" src="assets/img/show.png" />
+                    </ng-template>
+                </p-button>
+                <p class="textI">Cadenas</p>
+            </div>
+            <div class="botones">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right">
+                    <ng-template pTemplate="botonicon">
+                        <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
+                    </ng-template>
+                </p-button>
+                <p class="textI">Fecha</p>
+            </div>
+        </div>
+        <div class="grupo-4">
+            <div class="texto">
+                <p class="span1">
+                    los tipos de datos string, int, decimal y date se utilizan en SQL para almacenar diferentes tipos de
+                    información. El tipo de dato string se utiliza para texto, el tipo de dato int para números enteros,
+                    el tipo de dato decimal para números con decimales y el tipo de dato date para fechas. Al elegir el
+                    tipo de dato adecuado para cada columna, puedes garantizar un almacenamiento eficiente y preciso de
+                    los datos en tu base de datos.
+                </p>
+            </div>
+            <div class="boxdrag row">
+                <div class="boxDrop">
+                    <h2 class="card-title">Palabras Clave</h2>
+                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="listNumbers1"
+                        [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="drop($event)">
+                        <div cdkDrag class="block block-1" *ngFor="let n of listNumbers1">
+                            <span>{{n}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxDrop">
+                    <h2 class="card-title">Ordene Aqui</h2>
+                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="listNumbers2"
+                        [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="drop($event)">
+                        <div cdkDrag class="block block-2" *ngFor="let n of listNumbers2">
+                            <span>{{n}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="pie-pagina">
+    <div class="box">
+        <div>
+            <small>&copy; 2023 <b>Bases De Datos Para Novatos</b>- Todos los Derechos
+                Reservados.</small>
+        </div>
+    </div>
+</footer>
