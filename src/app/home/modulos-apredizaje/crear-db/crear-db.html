@@ -1,5 +1,5 @@
-<div class="boxTop4">
-    <p class="title">Uso Del Create, Drop y Show en bases de datos</p>
+<div class="boxTopTitle">
+    <p class="title">Uso del Create, Drop y Show en bases de datos</p>
 </div>
 
 <div class="boxTop2">
@@ -34,42 +34,46 @@
             </div>
         </div>
         <div class="grupo-4">
-            <div class="texto">
-                <p class="span1">
-                    Crear, eliminar y mostrar son operaciones fundamentales en el contexto
-                    de las bases de datos. <br />
-                    Crear: Operación que consiste en generar una nueva entidad o
-                    estructura en la base de datos, estableciendo su estructura y
-                    restricciones.
-                    <br />
-                    Eliminar: Operación para eliminar registros o documentos existentes en
-                    la base de datos que ya no son necesarios.
-                    <br />
-                    Mostrar: Operación para recuperar y visualizar datos almacenados en la
-                    base de datos, obteniendo información específica según criterios de
-                    búsqueda.
-                </p>
-            </div>
             <div class="boxdrag row">
                 <div class="boxDrop">
                     <h2 class="card-title">Palabras Clave</h2>
-                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="listNumbers1"
-                        [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="drop($event)">
-                        <div cdkDrag class="block block-1" *ngFor="let n of listNumbers1">
+                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="numbers1"
+                        [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="dropItem($event)">
+                        <div cdkDrag class="block block-1" *ngFor="let n of numbers1">
                             <span>{{n}}</span>
                         </div>
                     </div>
                 </div>
                 <div class="boxDrop">
                     <h2 class="card-title">Ordene Aqui</h2>
-                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="listNumbers2"
-                        [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="drop($event)">
-                        <div cdkDrag class="block block-2" *ngFor="let n of listNumbers2">
+                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="numbers2"
+                        [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="dropItem($event)">
+                        <div cdkDrag class="block block-2" *ngFor="let n of numbers2">
                             <span>{{n}}</span>
                         </div>
                     </div>
                 </div>
             </div>
+            <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+                <p class="span1"> 
+                    Crear, eliminar y mostrar son operaciones fundamentales en el contexto
+                    de las bases de datos.                 
+                </p>
+                <p class="span1">
+                    Crear: Operación que consiste en generar una nueva entidad o
+                    estructura en la base de datos, estableciendo su estructura y
+                    restricciones. 
+                </p>
+                <p class="span1">
+                    Eliminar: Operación para eliminar registros o documentos existentes en
+                    la base de datos que ya no son necesarios.
+                </p>
+                <p class="span1 m-0">
+                    Mostrar: Operación para recuperar y visualizar datos almacenados en la
+                    base de datos, obteniendo información específica según criterios de
+                    búsqueda.
+                </p>
+            </p-scrollPanel>
         </div>
     </div>
 </div>

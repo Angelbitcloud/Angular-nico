@@ -1,42 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
-
+import { DragDropService } from '../service/drag-drop.service';
 
 @Component({
   selector: 'crear-db',
   templateUrl: './crear-db.html',
   styleUrls: ['./crear-db.css']
 })
-export class CrearDbComponent implements OnInit {
+export class CrearDbComponent  {
 
-  public listNumbers1;
-  public listNumbers2;
+  constructor(private dragDropService: DragDropService) { }
 
-  constructor() { }
+  // Ejemplo de uso en el componente
 
-  ngOnInit() {
-    this.listNumbers1 = ['CREATE','CONNECT','USER ','DATABASE','WHERE','JOIN','NEW','nombre_de_la_base_de_datos','USE',';',':'];
-    this.listNumbers2 = [];  
+  // Acceder a las propiedades del servicio
+  public numbers1 = this.dragDropService.listNumbers1;
+  public numbers2 = this.dragDropService.listNumbers2;
+
+  // Llamar al método del servicio
+  public dropItem($event) {
+    this.dragDropService.drop($event);
   }
-
-  drop($event: CdkDragDrop<number[]>){
-
-    if($event.previousContainer === $event.container){
-      moveItemInArray(
-        $event.container.data,
-        $event.previousIndex,
-        $event.currentIndex
-      )
-    }else{
-      transferArrayItem(
-        $event.previousContainer.data,
-        $event.container.data,
-        $event.previousIndex,
-        $event.currentIndex
-      );
-    }
-
-
-  }
-
 }

@@ -4,6 +4,8 @@ import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { CardModule } from 'primeng/card';
+import { ScrollerModule } from 'primeng/scroller';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
 
 
 
@@ -14,6 +16,8 @@ import { CardModule } from 'primeng/card';
     MenubarModule,
     AutoCompleteModule,
     CardModule,
+    ScrollerModule,
+    ScrollPanelModule
   ],
 })
 export class PrimengModule { }

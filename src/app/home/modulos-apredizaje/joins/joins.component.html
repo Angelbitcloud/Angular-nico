@@ -1,4 +1,4 @@
-<div class="boxTop4">
+<div class="boxTopTitle">
     <p class="title">Uso Del Create y Drop en Tablas</p>
 </div>
 
@@ -34,45 +34,45 @@
             </div>
         </div>
         <div class="grupo-4">
-            <div class="textoJ">
-                <p class="span1">
-                    En el contexto de las bases de datos relacionales, los joins se utilizan para combinar filas de dos
-                    o más tablas basándose en una condición de igualdad entre las columnas relacionadas. Los joins
-                    permiten consultar y obtener conjuntos de datos más completos y significativos al relacionar
-                    información de múltiples tablas en pocas palabras los joins nos permiten:
-                    <br />
-                    1. Combinar datos de tablas relacionadas: Los joins permiten unir filas de diferentes tablas para
-                    combinar información y obtener detalles completos de entidades relacionadas, como clientes y
-                    pedidos.
-                    <br />
-                    2. Recuperar datos relacionados: Los joins se utilizan para obtener información relacionada de
-                    diferentes tablas mediante el uso de claves primarias y claves foráneas que establecen la conexión
-                    entre ellas.
-                    <br />
-                    3. Combinar y filtrar datos: Los joins permiten combinar y filtrar datos en base a condiciones
-                    específicas, como igualdad, mayor que, menor que, etc., para obtener solo los resultados deseados.
-                </p>
-            </div>
             <div class="boxdrag row">
                 <div class="boxDrop">
                     <h2 class="card-title">Palabras Clave</h2>
-                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="listNumbers1"
-                        [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="drop($event)">
-                        <div cdkDrag class="block block-1" *ngFor="let n of listNumbers1">
+                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="numbers1"
+                        [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="dropItem($event)">
+                        <div cdkDrag class="block block-1" *ngFor="let n of numbers1">
                             <span>{{n}}</span>
                         </div>
                     </div>
                 </div>
                 <div class="boxDrop">
                     <h2 class="card-title">Ordene Aqui</h2>
-                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="listNumbers2"
-                        [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="drop($event)">
-                        <div cdkDrag class="block block-2" *ngFor="let n of listNumbers2">
+                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="numbers2"
+                        [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="dropItem($event)">
+                        <div cdkDrag class="block block-2" *ngFor="let n of numbers2">
                             <span>{{n}}</span>
                         </div>
                     </div>
                 </div>
             </div>
+            <p-scrollPanel [style]="{ width: '100%', height: '350px' }">
+                <p class="span1">
+                    En el contexto de las bases de datos relacionales, los joins se utilizan para combinar filas de dos
+                    o más tablas basándose en una condición de igualdad entre las columnas relacionadas. Los joins
+                    permiten consultar y obtener conjuntos de datos más completos y significativos al relacionar
+                    información de múltiples tablas en pocas palabras los joins nos permiten:
+                    </p>
+                <p class="span1">
+                    1. Combinar datos de tablas relacionadas: Los joins permiten unir filas de diferentes tablas para
+                    combinar información y obtener detalles completos de entidades relacionadas, como clientes y
+                    pedidos.</p>
+                <p class="span1">
+                    2. Recuperar datos relacionados: Los joins se utilizan para obtener información relacionada de
+                    diferentes tablas mediante el uso de claves primarias y claves foráneas que establecen la conexión
+                    entre ellas</p>
+                    <p class="span1 m-0">                    3. Combinar y filtrar datos: Los joins permiten combinar y filtrar datos en base a condiciones
+                    específicas, como igualdad, mayor que, menor que, etc., para obtener solo los resultados deseados.
+                </p>
+            </p-scrollPanel>
         </div>
     </div>
 </div>

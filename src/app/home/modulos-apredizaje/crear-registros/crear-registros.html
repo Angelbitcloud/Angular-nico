@@ -1,4 +1,4 @@
-<div class="boxTop4">
+<div class="boxTopTitle">
     <p class="title">Registros y sus aplicaciones</p>
 </div>
 
@@ -43,41 +43,54 @@
             </div>
         </div>
         <div class="grupo-4">
-            <div class="texto">
-                <p class="span1">
-                    Un registro está compuesto por campos o columnas, donde cada campo
-                    contiene un dato específico que describe una característica de la
-                    entidad representada por el registro. Por ejemplo, en una tabla de
-                    clientes, un registro podría contener campos como el nombre, la
-                    dirección, el correo electrónico y el número de teléfono de un cliente
-                    en particular.
-                    <br />
-                    Los registros en una base de datos son la unidad fundamental para
-                    almacenar y recuperar información. Pueden ser creados, modificados,
-                    eliminados y consultados mediante operaciones de inserción,
-                    actualización, eliminación y consulta, respectivamente.
-                </p>
-            </div>
+
             <div class="boxdrag row">
-                <div class="boxDrop">
-                    <h2 class="card-title">Palabras Clave</h2>
-                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="listNumbers1"
-                        [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="drop($event)">
-                        <div cdkDrag class="block block-1" *ngFor="let n of listNumbers1">
-                            <span>{{n}}</span>
+                <div class="boxdrag row">
+                    <div class="boxDrop">
+                        <h2 class="card-title">Palabras Clave</h2>
+                        <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="numbers1"
+                            [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="dropItem($event)">
+                            <div cdkDrag class="block block-1" *ngFor="let n of numbers1">
+                                <span>{{n}}</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="boxDrop">
-                    <h2 class="card-title">Ordene Aqui</h2>
-                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="listNumbers2"
-                        [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="drop($event)">
-                        <div cdkDrag class="block block-2" *ngFor="let n of listNumbers2">
-                            <span>{{n}}</span>
+                    <div class="boxDrop">
+                        <h2 class="card-title">Ordene Aqui</h2>
+                        <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="numbers2"
+                            [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="dropItem($event)">
+                            <div cdkDrag class="block block-2" *ngFor="let n of numbers2">
+                                <span>{{n}}</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+                <p class="span1">
+                    Insert Into: Es una sentencia SQL utilizada para insertar nuevos registros en una tabla. Permite
+                    especificar los valores a insertar para cada columna de la tabla.
+                </p>
+                <p class="span1">
+                    Select: Es una sentencia SQL utilizada para obtener registros de una tabla o conjunto de tablas.
+                    Permite especificar las columnas que se desean recuperar, las condiciones de filtrado y el orden de
+                    los resultados.
+                </p>
+                <p class="span1">
+                    Where: Es una cláusula utilizada en la sentencia SQL Select (y otras) para filtrar los registros que
+                    cumplen una determinada condición. Permite establecer condiciones lógicas y comparativas para
+                    restringir los resultados.
+                </p>
+                <p class="span1">
+                    Delete: Es una sentencia SQL utilizada para eliminar registros de una tabla. Permite especificar las
+                    condiciones que deben cumplir los registros a eliminar.
+                </p>
+
+                <p class="span1 m-0">
+                    Update: Es una sentencia SQL utilizada para actualizar los valores de uno o más registros en una
+                    tabla. Permite modificar los valores de las columnas existentes en función de ciertas condiciones.
+                </p>
+            </p-scrollPanel>
         </div>
     </div>
 </div>

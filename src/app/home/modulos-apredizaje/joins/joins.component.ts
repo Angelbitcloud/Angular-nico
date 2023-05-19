@@ -1,41 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { DragDropService } from '../service/drag-drop.service';
 
 @Component({
   selector: 'app-joins',
   templateUrl: './joins.component.html',
   styleUrls: ['./joins.component.css']
 })
-export class JoinsComponent implements OnInit {
+export class JoinsComponent {
 
-  public listNumbers1;
-  public listNumbers2;
+  constructor(private dragDropService: DragDropService) { }
 
-  constructor() { }
+  // Ejemplo de uso en el componente
 
-  ngOnInit() {
-    this.listNumbers1 = ['CREATE', 'CONNECT', 'USER', 'DATABASE', 'WHERE', 'JOIN', 'NEW', 'SELECT', 
-                          'FROM','RIGHT JOIN', 'INSERT', 'UPDATE', 'INNER JOIN', 'TABLE', 'COLUMN', 'DROP', 
-                          'LEFT JOIN', 'VALUES', 'INTO', '(',')', 'GROUP', 'BY', 'HAVING', 'ORDER', 'ASC',',', 
-                          'DESC', 'LIMIT','nombre_de_la_tabla',';',':','columna1','tipo_de_dato','condiciones'];
-    this.listNumbers2 = [];
-  }
+  // Acceder a las propiedades del servicio
+  public numbers1 = this.dragDropService.listNumbers1;
+  public numbers2 = this.dragDropService.listNumbers2;
 
-  drop($event: CdkDragDrop<number[]>) {
-
-    if ($event.previousContainer === $event.container) {
-      moveItemInArray(
-        $event.container.data,
-        $event.previousIndex,
-        $event.currentIndex
-      )
-    } else {
-      transferArrayItem(
-        $event.previousContainer.data,
-        $event.container.data,
-        $event.previousIndex,
-        $event.currentIndex
-      );
-    }
+  // Llamar al método del servicio
+  public dropItem($event) {
+    this.dragDropService.drop($event);
   }
 }

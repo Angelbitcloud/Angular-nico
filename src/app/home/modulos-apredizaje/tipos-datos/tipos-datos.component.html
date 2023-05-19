@@ -1,4 +1,4 @@
-<div class="boxTop4">
+<div class="boxTopTitle">
     <p class="title">Tipos de Datos</p>
 </div>
 
@@ -43,35 +43,50 @@
             </div>
         </div>
         <div class="grupo-4">
-            <div class="texto">
-                <p class="span1">
-                    los tipos de datos string, int, decimal y date se utilizan en SQL para almacenar diferentes tipos de
-                    información. El tipo de dato string se utiliza para texto, el tipo de dato int para números enteros,
-                    el tipo de dato decimal para números con decimales y el tipo de dato date para fechas. Al elegir el
-                    tipo de dato adecuado para cada columna, puedes garantizar un almacenamiento eficiente y preciso de
-                    los datos en tu base de datos.
-                </p>
-            </div>
             <div class="boxdrag row">
                 <div class="boxDrop">
                     <h2 class="card-title">Palabras Clave</h2>
-                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="listNumbers1"
-                        [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="drop($event)">
-                        <div cdkDrag class="block block-1" *ngFor="let n of listNumbers1">
+                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="numbers1"
+                        [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="dropItem($event)">
+                        <div cdkDrag class="block block-1" *ngFor="let n of numbers1">
                             <span>{{n}}</span>
                         </div>
                     </div>
                 </div>
                 <div class="boxDrop">
                     <h2 class="card-title">Ordene Aqui</h2>
-                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="listNumbers2"
-                        [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="drop($event)">
-                        <div cdkDrag class="block block-2" *ngFor="let n of listNumbers2">
+                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="numbers2"
+                        [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="dropItem($event)">
+                        <div cdkDrag class="block block-2" *ngFor="let n of numbers2">
                             <span>{{n}}</span>
                         </div>
                     </div>
                 </div>
             </div>
+            <p-scrollPanel [style]="{ width: '100%', height: '350px' }">
+                <p class="span1">
+                    En SQL, los tipos de datos son utilizados para definir el tipo de valor que puede almacenarse en una
+                    columna de una tabla. Los tipos de datos en SQL varían dependiendo del sistema de gestión de bases
+                    de datos (SGBD) utilizado, pero a continuación se presentan los tipos de datos más comunes:</p>
+                <p class="span1">
+                    Enteros (Integer): Representan números enteros sin decimales. Pueden ser de diferentes tamaños y se
+                    pueden especificar como INT, SMALLINT, BIGINT, entre otros.</p>
+                <p class="span1">
+                    Decimales o números de punto flotante (Decimal/Float): Representan números con decimales. Pueden ser
+                    de precisión fija (DECIMAL, NUMERIC) o de precisión variable (FLOAT, REAL).</p>
+                <p class="span1">
+                    Cadenas de caracteres (Character Strings): Representan datos de texto. Pueden ser de longitud fija
+                    (CHAR) o de longitud variable (VARCHAR, TEXT).</p>
+                <p class="span1">
+                    Fechas y horas (Date/Time): Representan valores de fecha y hora. Pueden ser DATE (solo fecha), TIME
+                    (solo hora), DATETIME (fecha y hora), TIMESTAMP, entre otros.
+                </p>
+                <p class="span1 m-0">
+                    Es importante tener en cuenta que los tipos de datos pueden tener diferentes precisiones, longitudes
+                    y restricciones dependiendo del SGBD y la implementación específica. Además, algunos SGBD también
+                    ofrecen extensiones o tipos de datos personalizados para adaptarse a necesidades específicas.
+                </p>
+            </p-scrollPanel>
         </div>
     </div>
 </div>

@@ -1,5 +1,5 @@
-<div class="boxTop4">
-    <p class="title">Uso Del Create y Drop en Tablas </p>
+<div class="boxTopTitle">
+    <p class="title">Uso del Create y Drop en Tablas </p>
 </div>
 
 <div class="boxTop2">
@@ -25,42 +25,39 @@
             </div>
         </div>
         <div class="grupo-4">
-            <div class="texto">
-                <p class="span1">
-                    Crear una tabla:
-                    
-                    La sentencia CREATE TABLE se utiliza para crear una nueva tabla en la base de datos.
-                    Especificas el nombre de la tabla y las columnas que contendrá, junto con sus tipos de datos.
-                    Puedes definir restricciones como claves primarias, claves foráneas, valores predeterminados,
-                    restricciones de integridad, etc.
-                    <br/>
-                    Eliminar una tabla:
-                    La sentencia DROP TABLE se utiliza para eliminar una tabla existente de la base de datos.
-                    Proporcionas el nombre de la tabla que deseas eliminar.
-                    Al eliminar una tabla, se eliminan todos los datos y la estructura asociada a ella.
-                    Esta operación es irreversible, por lo que se recomienda tener precaución al eliminar tablas.
-                </p>
-            </div>
             <div class="boxdrag row">
                 <div class="boxDrop">
                     <h2 class="card-title">Palabras Clave</h2>
-                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="listNumbers1"
-                        [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="drop($event)">
-                        <div cdkDrag class="block block-1" *ngFor="let n of listNumbers1">
+                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="numbers1"
+                        [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="dropItem($event)">
+                        <div cdkDrag class="block block-1" *ngFor="let n of numbers1">
                             <span>{{n}}</span>
                         </div>
                     </div>
                 </div>
                 <div class="boxDrop">
                     <h2 class="card-title">Ordene Aqui</h2>
-                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="listNumbers2"
-                        [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="drop($event)">
-                        <div cdkDrag class="block block-2" *ngFor="let n of listNumbers2">
+                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="numbers2"
+                        [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="dropItem($event)">
+                        <div cdkDrag class="block block-2" *ngFor="let n of numbers2">
                             <span>{{n}}</span>
                         </div>
                     </div>
                 </div>
             </div>
+            <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+                <p class="span1">
+                    Crear una tabla:La sentencia CREATE TABLE se utiliza para crear una nueva tabla en la base de datos.
+                    Especificas el nombre de la tabla y las columnas que contendrá, junto con sus tipos de datos.
+                    Puedes definir restricciones como claves primarias, claves foráneas, valores predeterminados,
+                    restricciones de integridad, etc.</p>
+                <p class="span1 m-0">
+                    Eliminar una tabla:La sentencia DROP TABLE se utiliza para eliminar una tabla existente de la base de datos.
+                    Proporcionas el nombre de la tabla que deseas eliminar.
+                    Al eliminar una tabla, se eliminan todos los datos y la estructura asociada a ella.
+                    Esta operación es irreversible, por lo que se recomienda tener precaución al eliminar tablas.
+                </p>
+            </p-scrollPanel>
         </div>
     </div>
 </div>

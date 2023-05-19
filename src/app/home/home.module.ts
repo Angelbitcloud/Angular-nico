@@ -17,6 +17,8 @@ import { SubconsultasComponent } from './modulos-apredizaje/subconsultas/subcons
 
 
 
+
+
 @NgModule({
   declarations: [
     LadingPageComponent,
@@ -34,7 +36,8 @@ import { SubconsultasComponent } from './modulos-apredizaje/subconsultas/subcons
     CommonModule,
     HomeRoutingModule,
     PrimengModule,
-    DragDropModule
+    DragDropModule,
+
   ]
 })
 export class HomeModule { }
