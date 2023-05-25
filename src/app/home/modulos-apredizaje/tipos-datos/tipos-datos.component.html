@@ -6,8 +6,13 @@
     <div class="grupo-5">
         <div class="grupo-6">
             <div class="botones">
-                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
-                    iconPos="right">
+                <p-button 
+                    pRipple label="Show Bd" 
+                    color="#BC66F7" 
+                    styleClass="p-button-raised " 
+                    icon="pi boton icon"
+                    iconPos="right"
+                    (click)="enteroDato()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/crear.png" />
                     </ng-template>
@@ -15,8 +20,13 @@
                 <p class="textI">Enteros</p>
             </div>
             <div class="botones">
-                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
-                    iconPos="right">
+                <p-button 
+                    pRipple label="Show Bd" 
+                    color="#BC66F7" 
+                    styleClass="p-button-raised " 
+                    icon="pi boton icon"
+                    iconPos="right"
+                    (click)="decimalDato()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
                     </ng-template>
@@ -24,8 +34,13 @@
                 <p class="textI">Decimal</p>
             </div>
             <div class="botones">
-                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
-                    iconPos="right">
+                <p-button 
+                    pRipple label="Show Bd" 
+                    color="#BC66F7" 
+                    styleClass="p-button-raised " 
+                    icon="pi boton icon"
+                    iconPos="right"
+                    (click)="cadenasDato()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/show.png" />
                     </ng-template>
@@ -33,8 +48,13 @@
                 <p class="textI">Cadenas</p>
             </div>
             <div class="botones">
-                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
-                    iconPos="right">
+                <p-button 
+                    pRipple label="Show Bd" 
+                    color="#BC66F7" 
+                    styleClass="p-button-raised " 
+                    icon="pi boton icon"
+                    iconPos="right"
+                    (click)="fechaDato()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
                     </ng-template>
@@ -64,6 +84,12 @@
                 </div>
             </div>
             <p-scrollPanel [style]="{ width: '100%', height: '350px' }">
+                <div>
+                    <p>{{ data.titulo }}</p>
+                    <p>{{ data.introduccion }}</p>
+                    <p>{{ data.explicacion }}</p>
+                    <img alt="boton icon" class="img4" [src]="data.imagen" />
+                </div>
                 <p class="span1">
                     En SQL, los tipos de datos son utilizados para definir el tipo de valor que puede almacenarse en una
                     columna de una tabla. Los tipos de datos en SQL varían dependiendo del sistema de gestión de bases

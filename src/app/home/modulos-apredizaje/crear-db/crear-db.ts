@@ -39,12 +39,15 @@ export class CrearDbComponent implements OnInit {
     this.dragDropService.drop($event);
   }
 
-  public dropDataBase(): void {
-    this.data = this.obtenerDataService.obtenerObjetoData('drop-databse');
-  }
-
   public createDataBase(): void {
     this.data = this.obtenerDataService.obtenerObjetoData('create-database');
   }
 
+  public dropDataBase(): void {
+    this.data = this.obtenerDataService.obtenerObjetoData('drop-databse');
+  }
+
+  public showDataBase(): void {
+    this.data = this.obtenerDataService.obtenerObjetoData('show-databse');
+  }
 }

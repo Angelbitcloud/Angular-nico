@@ -6,8 +6,13 @@
     <div class="grupo-5">
         <div class="grupo-6">
             <div class="botones">
-                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
-                    iconPos="right">
+                <p-button 
+                    pRipple label="Show Bd" 
+                    color="#BC66F7" 
+                    styleClass="p-button-raised " 
+                    icon="pi boton icon"
+                    iconPos="right"
+                    (click)="primaryKeyConsulta()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/crear.png" />
                     </ng-template>
@@ -15,8 +20,13 @@
                 <p class="textI"> Primary Key </p>
             </div>
             <div class="botones">
-                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
-                    iconPos="right">
+                <p-button 
+                    pRipple label="Show Bd" 
+                    color="#BC66F7" 
+                    styleClass="p-button-raised " 
+                    icon="pi boton icon"
+                    iconPos="right"
+                    (click)="foreignKeyConsulta()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
                     </ng-template>
@@ -47,6 +57,12 @@
                 </div>
             </div>
             <p-scrollPanel [style]="{ width: '100%', height: '350px' }">
+                <div>
+                    <p>{{ data.titulo }}</p>
+                    <p>{{ data.introduccion }}</p>
+                    <p>{{ data.explicacion }}</p>
+                    <img alt="boton icon" class="img4" [src]="data.imagen" />
+                </div>
                 <p class="span1">
                     Primary Key (Clave Primaria): La Primary Key es un atributo o conjunto de atributos que identifica de forma única cada registro en
                     una tabla. Sirve como identificador único para cada fila y garantiza la unicidad y la integridad de

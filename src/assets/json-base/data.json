@@ -11,7 +11,145 @@
         "explicacion": "Operación para eliminar las base de datos existentes.",
         "imagen": "assets/img/borrar.png"
     },
-    "repeticion3": {
+    "create-table": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "drop-table": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "insert-consulta": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "select-consulta": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "where-consulta": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "delete-consulta": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "primary-key-consulta": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "foreign-key-consulta": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "entero-dato": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "decimal-dato": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "cadenas-dato": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "fecha-dato": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "order-consulta": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "select-funciones": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "where-funciones": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "alter-table-drop": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "alter-table-add": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "alter-table-rename": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "inner-join": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "right-join": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "left-join": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "udate-delete": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "exist-not-exist": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    },
+    "any-some-all": {
       "titulo": "",
       "introduccion": "",
       "explicacion": "",

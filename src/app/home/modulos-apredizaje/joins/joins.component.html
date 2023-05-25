@@ -6,8 +6,13 @@
     <div class="grupo-5">
         <div class="grupo-6">
             <div class="botones">
-                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
-                    iconPos="right">
+                <p-button 
+                    pRipple label="Show Bd" 
+                    color="#BC66F7" 
+                    styleClass="p-button-raised " 
+                    icon="pi boton icon"
+                    iconPos="right"
+                    (click)="innerJoin()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/crear.png" />
                     </ng-template>
@@ -15,8 +20,13 @@
                 <p class="textI">Inner Join</p>
             </div>
             <div class="botones">
-                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
-                    iconPos="right">
+                <p-button 
+                    pRipple label="Show Bd" 
+                    color="#BC66F7" 
+                    styleClass="p-button-raised " 
+                    icon="pi boton icon"
+                    iconPos="right"
+                    (click)="rightJoin()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
                     </ng-template>
@@ -24,8 +34,13 @@
                 <p class="textI">Right Join </p>
             </div>
             <div class="botones">
-                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
-                    iconPos="right">
+                <p-button 
+                    pRipple label="Show Bd" 
+                    color="#BC66F7" 
+                    styleClass="p-button-raised " 
+                    icon="pi boton icon"
+                    iconPos="right"
+                    (click)="leftJoin()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/show.png" />
                     </ng-template>
@@ -55,6 +70,12 @@
                 </div>
             </div>
             <p-scrollPanel [style]="{ width: '100%', height: '350px' }">
+                <div>
+                    <p>{{ data.titulo }}</p>
+                    <p>{{ data.introduccion }}</p>
+                    <p>{{ data.explicacion }}</p>
+                    <img alt="boton icon" class="img4" [src]="data.imagen" />
+                </div>
                 <p class="span1">
                     En el contexto de las bases de datos relacionales, los joins se utilizan para combinar filas de dos
                     o más tablas basándose en una condición de igualdad entre las columnas relacionadas. Los joins
