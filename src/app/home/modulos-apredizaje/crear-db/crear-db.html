@@ -6,8 +6,13 @@
     <div class="grupo-5">
         <div class="grupo-6">
             <div class="botones">
-                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
-                    iconPos="right">
+                <p-button 
+                pRipple label="Show Bd" 
+                color="#BC66F7" 
+                styleClass="p-button-raised " 
+                icon="pi boton icon"
+                iconPos="right"
+                (click)="createDataBase()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/crear.png" />
                     </ng-template>
@@ -15,8 +20,13 @@
                 <p class="textI">Create</p>
             </div>
             <div class="botones">
-                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
-                    iconPos="right">
+                <p-button 
+                    pRipple label="Show Bd" 
+                    color="#BC66F7" 
+                    styleClass="p-button-raised " 
+                    icon="pi boton icon"
+                    iconPos="right"
+                    (click)="dropDataBase()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
                     </ng-template>
@@ -55,6 +65,12 @@
                 </div>
             </div>
             <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+                <div>
+                    <p>{{ data.titulo }}</p>
+                    <p>{{ data.introduccion }}</p>
+                    <p>{{ data.explicacion }}</p>
+                    <img alt="boton icon" class="img4" [src]="data.imagen" />
+                </div>
                 <p class="span1"> 
                     Crear, eliminar y mostrar son operaciones fundamentales en el contexto
                     de las bases de datos.                 

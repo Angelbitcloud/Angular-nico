@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DragDropService } from '../service/drag-drop.service';
+import { DragDropService } from '../../../core/model/service/drag-drop/drag-drop.service';
 @Component({
   selector: 'app-keys',
   templateUrl: './keys.component.html',

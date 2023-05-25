@@ -1,0 +1,20 @@
+{
+    "create-database": {
+      "titulo": "Create DataBase",
+      "introduccion": "aqui se crea la bd",
+      "explicacion": "aqui se explica como crear la bd",
+      "imagen": "assets/img/crear.png"
+    },
+    "drop-databse": {
+        "titulo": "Drop DataBase",
+        "introduccion": "Para eliminar bds basta con poner drop database databaseNombre",
+        "explicacion": "Operación para eliminar las base de datos existentes.",
+        "imagen": "assets/img/borrar.png"
+    },
+    "repeticion3": {
+      "titulo": "",
+      "introduccion": "",
+      "explicacion": "",
+      "imagen": ""
+    }
+  }
