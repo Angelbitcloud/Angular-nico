@@ -11,16 +11,20 @@ import { DataExplicacion } from 'src/app/core/model/interfaces/data-explicacion'
 export class CrearDbComponent implements OnInit {
 
   data: DataExplicacion;
+  comparisonResult: string;
+  otherArray: string[];
+
 
   constructor(
-      private dragDropService: DragDropService,
-      private obtenerDataService: ObtenerDataService
+    private dragDropService: DragDropService,
+    private obtenerDataService: ObtenerDataService
   ) {
     this.data = {
       titulo: '',
       introduccion: '',
       explicacion: '',
-      imagen: ''
+      imagen: '',
+      pregunta: ''
     }
   }
 
@@ -30,8 +34,21 @@ export class CrearDbComponent implements OnInit {
   public numbers1 = this.dragDropService.listNumbers1;
   public numbers2 = this.dragDropService.listNumbers2;
 
+
   ngOnInit(): void {
     this.createDataBase();
+  }
+
+  compareArrays(): void {
+    const numbers2String = (this.numbers2);
+    const otherArrayString = (this.otherArray);
+
+    if (numbers2String === otherArrayString) {
+      this.comparisonResult = 'La consulta es correcta';
+
+    } else {
+      this.comparisonResult = 'La consulta es incorrecta';
+    }
   }
 
   // Llamar al método del servicio
@@ -49,5 +66,6 @@ export class CrearDbComponent implements OnInit {
 
   public showDataBase(): void {
     this.data = this.obtenerDataService.obtenerObjetoData('show-databse');
-  }
+    this.otherArray = this.data.pregunta.split(' ');
+    }
 }

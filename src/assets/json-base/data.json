@@ -1,158 +1,191 @@
 {
-    "create-database": {
-      "titulo": "Create DataBase",
-      "introduccion": "aqui se crea la bd",
-      "explicacion": "aqui se explica como crear la bd",
-      "imagen": "assets/img/crear.png"
-    },
-    "drop-databse": {
-        "titulo": "Drop DataBase",
-        "introduccion": "Para eliminar bds basta con poner drop database databaseNombre",
-        "explicacion": "Operación para eliminar las base de datos existentes.",
-        "imagen": "assets/img/borrar.png"
-    },
-    "create-table": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "drop-table": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "insert-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "select-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "where-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "delete-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "primary-key-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "foreign-key-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "entero-dato": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "decimal-dato": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "cadenas-dato": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "fecha-dato": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "order-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "select-funciones": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "where-funciones": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "alter-table-drop": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "alter-table-add": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "alter-table-rename": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "inner-join": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "right-join": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "left-join": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "udate-delete": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "exist-not-exist": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "any-some-all": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    }
+  "create-database": {
+    "titulo": "Create DataBase",
+    "introduccion": "Crear: Operación que consiste en generar una nueva entidad o estructura en la base de datos, estableciendo su estructura y restricciones.",
+    "explicacion": "aqui se explica como crear la bd",
+    "imagen": "assets/img/crear.png",
+    "pregunta": ""
+  },
+  "drop-databse": {
+    "titulo": "Drop DataBase",
+    "introduccion": "Eliminar: Operación para eliminar registros o documentos existentes en la base de datos que ya no son necesarios.",
+    "explicacion": "Operación para eliminar las base de datos existentes.",
+    "imagen": "assets/img/borrar.png",
+    "pregunta": ""
+  },
+  "show-databse": {
+    "titulo": "Show DataBase",
+    "introduccion": "Mostrar: Operación para recuperar y visualizar datos almacenados en la base de datos, obteniendo información específica según criterios de búsqueda.",
+    "explicacion": "Operación para eliminar las base de datos existentes.",
+    "imagen": "assets/img/borrar.png",
+    "pregunta": "CREATE DATABASE nombre_de_la_base_de_datos"
+  },
+  "create-table": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "drop-table": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "insert-consulta": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "select-consulta": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "where-consulta": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "delete-consulta": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "primary-key-consulta": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "foreign-key-consulta": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "entero-dato": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "decimal-dato": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "cadenas-dato": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "fecha-dato": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "order-consulta": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "select-funciones": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "where-funciones": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "alter-table-drop": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "alter-table-add": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "alter-table-rename": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "inner-join": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "right-join": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "left-join": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "udate-delete": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "exist-not-exist": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
+  },
+  "any-some-all": {
+    "titulo": "",
+    "introduccion": "",
+    "explicacion": "",
+    "imagen": "",
+    "pregunta": ""
   }
+}

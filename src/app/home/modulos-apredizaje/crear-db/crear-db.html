@@ -6,13 +6,8 @@
     <div class="grupo-5">
         <div class="grupo-6">
             <div class="botones">
-                <p-button 
-                    pRipple label="Show Bd" 
-                    color="#BC66F7" 
-                    styleClass="p-button-raised " 
-                    icon="pi boton icon"
-                    iconPos="right"
-                    (click)="createDataBase()">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right" (click)="createDataBase()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/crear.png" />
                     </ng-template>
@@ -20,13 +15,8 @@
                 <p class="textI">Create</p>
             </div>
             <div class="botones">
-                <p-button 
-                    pRipple label="Show Bd" 
-                    color="#BC66F7" 
-                    styleClass="p-button-raised " 
-                    icon="pi boton icon"
-                    iconPos="right"
-                    (click)="dropDataBase()">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right" (click)="dropDataBase()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
                     </ng-template>
@@ -34,13 +24,8 @@
                 <p class="textI">Drop</p>
             </div>
             <div class="botones">
-                <p-button 
-                pRipple label="Show Bd" 
-                color="#BC66F7" 
-                styleClass="p-button-raised " 
-                icon="pi boton icon"
-                iconPos="right"
-                (click)="showDataBase()">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right" (click)="showDataBase()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/show.png" />
                     </ng-template>
@@ -69,31 +54,21 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <button (click)="compareArrays()">Comparar Arreglos</button>
+                <p>Tu respuesta: {{ comparisonResult }}</p>
+            </div>
             <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
-                <div>
+                <p class="span1">
+                    Crear, eliminar y mostrar son operaciones fundamentales en el contexto
+                    de las bases de datos.
+                </p>
+                <div class="span1">
                     <p>{{ data.titulo }}</p>
                     <p>{{ data.introduccion }}</p>
                     <p>{{ data.explicacion }}</p>
                     <img alt="boton icon" class="img4" [src]="data.imagen" />
                 </div>
-                <p class="span1"> 
-                    Crear, eliminar y mostrar son operaciones fundamentales en el contexto
-                    de las bases de datos.                 
-                </p>
-                <p class="span1">
-                    Crear: Operación que consiste en generar una nueva entidad o
-                    estructura en la base de datos, estableciendo su estructura y
-                    restricciones. 
-                </p>
-                <p class="span1">
-                    Eliminar: Operación para eliminar registros o documentos existentes en
-                    la base de datos que ya no son necesarios.
-                </p>
-                <p class="span1 m-0">
-                    Mostrar: Operación para recuperar y visualizar datos almacenados en la
-                    base de datos, obteniendo información específica según criterios de
-                    búsqueda.
-                </p>
             </p-scrollPanel>
         </div>
     </div>

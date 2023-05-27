@@ -22,7 +22,8 @@ export class FuncionesTablasComponent implements OnInit {
         titulo: '',
         introduccion: '',
         explicacion: '',
-        imagen: ''
+        imagen: '',
+        pregunta: ''
       }
     }
 

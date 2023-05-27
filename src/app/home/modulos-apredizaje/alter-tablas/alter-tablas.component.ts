@@ -20,7 +20,8 @@ export class AlterTablasComponent implements OnInit {
         titulo: '',
         introduccion: '',
         explicacion: '',
-        imagen: ''
+        imagen: '',
+        pregunta: ''
       }
     }
 

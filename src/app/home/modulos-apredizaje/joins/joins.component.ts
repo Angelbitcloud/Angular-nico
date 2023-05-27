@@ -20,7 +20,8 @@ export class JoinsComponent implements OnInit {
         titulo: '',
         introduccion: '',
         explicacion: '',
-        imagen: ''
+        imagen: '',
+        pregunta: ''
       }
     }
 

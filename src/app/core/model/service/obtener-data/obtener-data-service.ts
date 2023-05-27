@@ -14,7 +14,8 @@ export class ObtenerDataService {
       titulo: '',
       introduccion: '',
       explicacion: '',
-      imagen: ''
+      imagen: '',
+      pregunta: ''
     }
   }
 
@@ -25,7 +26,7 @@ export class ObtenerDataService {
     this.data.explicacion = jsonData.explicacion;
     this.data.introduccion = jsonData.introduccion;
     this.data.imagen = jsonData.imagen;
-
+    this.data.pregunta = jsonData.pregunta;
     return this.data;
   }
     
