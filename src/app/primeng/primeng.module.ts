@@ -6,6 +6,7 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
 import { CardModule } from 'primeng/card';
 import { ScrollerModule } from 'primeng/scroller';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { MessagesModule } from 'primeng/messages';
 
 
 
@@ -17,7 +18,8 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
     AutoCompleteModule,
     CardModule,
     ScrollerModule,
-    ScrollPanelModule
+    ScrollPanelModule,
+    MessagesModule
   ],
 })
 export class PrimengModule { }
