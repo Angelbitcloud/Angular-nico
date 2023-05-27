@@ -1,170 +1,196 @@
 {
-    "create-database": {
-      "titulo": "Create DataBase",
-      "explicacion": "aqui se crea la bd",
-      "pregunta": "aqui se explica como crear la bd",
-      "respuesta": "create database perritos ;",
-      "imagen": "assets/img/crear.png"
-    },
-    "drop-databse": {
-        "titulo": "Drop DataBase",
-        "introduccion": "Para eliminar bds basta con poner drop database databaseNombre",
-        "explicacion": "Operación para eliminar las base de datos existentes.",
-        "imagen": "assets/img/borrar.png"
-    },
-    "show-databse": {
-      "titulo": "Drop DataBase",
-      "introduccion": "Para eliminar bds basta con poner drop database databaseNombre",
-      "explicacion": "Operación para eliminar las base de datos existentes.",
-      "imagen": "assets/img/borrar.png"
+  "create-database": {
+    "Título": "Create DataBase",
+    "Explicación": "Aquí se crea la base de datos.",
+    "Pregunta": "¿Cómo se crea la base de datos?",
+    "Respuesta": "create database perritos ;",
+    "Imagen": "assets/img/crear.png"
   },
-    "create-table": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "drop-table": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "insert-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "select-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "where-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "delete-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "primary-key-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "foreign-key-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "entero-dato": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "decimal-dato": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "cadenas-dato": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "fecha-dato": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "order-consulta": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "select-funciones": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "where-funciones": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "alter-table-drop": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "alter-table-add": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "alter-table-rename": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "inner-join": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "right-join": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "left-join": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "udate-delete": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "exist-not-exist": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "any-some-all": {
-      "titulo": "",
-      "introduccion": "",
-      "explicacion": "",
-      "imagen": ""
-    },
-    "tips": {
-      "sintaxis": "Asegúrate de que la consulta SQL esté correctamente escrita. Revisa si hay errores tipográficos",
-      "divideConquista": "Intenta dividirla en partes más pequeñas y revisa que todo este bien",
-      "documentacion": "Revisa nuevamente la explicacion teorica y el ejemplo"
-    }
+  "drop-databse": {
+    "Título": "Drop DataBase",
+    "Explicación": "Aquí se elimina una base de datos existente.",
+    "Pregunta": "¿Cómo eliminar una base de datos?",
+    "Respuesta": "drop database databaseNombre;",
+    "Imagen": "assets/img/borrar.png"
+  },
+  "show-databse": {
+    "Título": "Show DataBase",
+    "Explicación": "Aquí se muestra la lista de bases de datos existentes.",
+    "Pregunta": "¿Cómo mostrar las bases de datos existentes?",
+    "Respuesta": "show databases;",
+    "Imagen": "assets/img/mostrar.png"
+  },
+  "create-table": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "drop-table": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "insert-consulta": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "select-consulta": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "where-consulta": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "delete-consulta": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "primary-key-consulta": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "foreign-key-consulta": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "entero-dato": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "decimal-dato": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "cadenas-dato": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "fecha-dato": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "order-consulta": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "select-funciones": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "where-funciones": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "alter-table-drop": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "alter-table-add": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "alter-table-rename": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "inner-join": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "right-join": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "left-join": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "udate-delete": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "exist-not-exist": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "any-some-all": {
+    "Título": "",
+    "Explicación": "",
+    "Pregunta": "",
+    "Respuesta": "",
+    "Imagen": ""
+  },
+  "tips": {
+    "Sintaxis": "Asegúrate de que la consulta SQL esté correctamente escrita. Revisa si hay errores tipográficos.",
+    "DivideConquista": "Intenta dividir la consulta en partes más pequeñas y revisa que todo esté bien.",
+    "Documentación": "Revisa nuevamente la explicación teórica y el ejemplo."
   }
+}
