@@ -20,7 +20,8 @@ export class TiposDatosComponent implements OnInit {
         titulo: '',
         introduccion: '',
         explicacion: '',
-        imagen: ''
+        imagen: '',
+        pregunta: ''
       }
     }
 

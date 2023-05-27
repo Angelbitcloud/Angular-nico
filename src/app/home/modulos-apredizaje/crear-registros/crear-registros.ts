@@ -20,7 +20,8 @@ export class CrearRegistrosComponent implements OnInit {
         titulo: '',
         introduccion: '',
         explicacion: '',
-        imagen: ''
+        imagen: '',
+        pregunta: ''
       }
     }
 

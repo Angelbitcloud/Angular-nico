@@ -3,4 +3,5 @@ export interface DataExplicacion {
     introduccion: String;
     explicacion: String;
     imagen: String;
+    pregunta: String;
 }
