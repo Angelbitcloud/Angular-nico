@@ -14,6 +14,7 @@ import { FuncionesTablasComponent } from './modulos-apredizaje/funciones-tablas/
 import { AlterTablasComponent } from './modulos-apredizaje/alter-tablas/alter-tablas.component';
 import { JoinsComponent } from './modulos-apredizaje/joins/joins.component';
 import { SubconsultasComponent } from './modulos-apredizaje/subconsultas/subconsultas.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -37,7 +38,7 @@ import { SubconsultasComponent } from './modulos-apredizaje/subconsultas/subcons
     HomeRoutingModule,
     PrimengModule,
     DragDropModule,
-
+    SharedModule
   ]
 })
 export class HomeModule { }

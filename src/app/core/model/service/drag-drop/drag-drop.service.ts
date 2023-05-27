@@ -5,11 +5,11 @@ import { CdkDragDrop, CdkDropList, copyArrayItem, moveItemInArray, transferArray
   providedIn: 'root'
 })
 export class DragDropService {
-  public listNumbers1: string[] = ['CREATE','SUM','AVG','COUNT','CONNECT', 'USER', 'DATABASE', 'WHERE', 'JOIN', 'NEW', 'SELECT',
+  public drags: string[] = ['CREATE','SUM','AVG','COUNT','CONNECT', 'USER', 'DATABASE', 'WHERE', 'JOIN', 'NEW', 'SELECT',
     'FROM', 'INSERT', 'UPDATE', 'DELETE', 'ALTER', 'TABLE', 'COLUMN', 'DROP','ORDER BY','DESC', 'OR','NOT','AND',
     'ADD', 'VALUES', 'INTO', '(', ')', 'GROUP', 'BY', 'HAVING', 'ORDER', 'ASC', ',','MAX','MIN',
-    'DESC', 'LIMIT', 'nombre_de_la_tabla',  'nombre_de_la_base_de_datos', ';', ':', 'columna', 'tipo_de_dato', 'condiciones'];
-  public listNumbers2: string[] = [];
+    'DESC', 'LIMIT', 'nombre_de_la_tabla',  'perritos', ';', ':', 'columna', 'tipo_de_dato', 'condiciones'];
+  public drops: string[] = [];
 
   constructor() { }
 
@@ -21,14 +21,14 @@ export class DragDropService {
         $event.currentIndex
       );
     } else {
-      if ($event.container.data === this.listNumbers1) {
+      if ($event.container.data === this.drags) {
         // Eliminar el elemento de listNumbers2 si está presente
-        const index = this.listNumbers2.indexOf($event.previousContainer.data[$event.previousIndex]);
+        const index = this.drops.indexOf($event.previousContainer.data[$event.previousIndex]);
         if (index !== -1) {
-          this.listNumbers2.splice(index, 1);
+          this.drops.splice(index, 1);
         }
         
-      } else if ($event.container.data === this.listNumbers2) {
+      } else if ($event.container.data === this.drops) {
         // Copiar el elemento a listNumbers2
         copyArrayItem(
           $event.previousContainer.data,

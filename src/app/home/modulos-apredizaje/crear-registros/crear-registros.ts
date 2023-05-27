@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DragDropService } from '../../../core/model/service/drag-drop/drag-drop.service';
-import { DataExplicacion } from 'src/app/core/model/interfaces/data-explicacion';
+import { DataExplicacion } from 'src/app/core/model/interfaces/data-explicacion.interface';
 import { ObtenerDataService } from 'src/app/core/model/service/obtener-data/obtener-data-service';
+import { Tips } from 'src/app/core/model/interfaces/tips.interface';
 
 @Component({
   selector: 'crear-registros',
@@ -11,28 +12,50 @@ import { ObtenerDataService } from 'src/app/core/model/service/obtener-data/obte
 export class CrearRegistrosComponent implements OnInit {
 
   data: DataExplicacion;
+  tips: Tips;
+  resComparar: String;
+
+  public drags: string[];
+  public drops: string[];
 
   constructor(
     private dragDropService: DragDropService,
     private obtenerDataService: ObtenerDataService
-    ) {
-      this.data = {
-        titulo: '',
-        introduccion: '',
-        explicacion: '',
-        imagen: '',
-        pregunta: ''
-      }
-    }
-
-  // Ejemplo de uso en el componente
-
-  // Acceder a las propiedades del servicio
-  public numbers1 = this.dragDropService.listNumbers1;
-  public numbers2 = this.dragDropService.listNumbers2;
+  ) {
+    this.data = {
+      titulo: '',
+      explicacion: '',
+      pregunta: '',
+      imagen: '',
+      respuesta: ''
+    };
+    this.tips = {
+      sintaxis: "",
+      divideConquista: "",
+      documentacion: ""
+    };
+    this.drags = this.dragDropService.drags;
+    this.drops = this.dragDropService.drops;
+  }
 
   ngOnInit(): void {
+    this.limpiarDrops();
     this.insertConsulta();
+  }
+
+  compareArrays(): void {
+    let iguales: boolean;
+    let dropRespuesta = this.drops.join(' ').toUpperCase();
+    let jsonRespuesta = this.data.respuesta.toUpperCase();
+    [this.resComparar, iguales] = this.obtenerDataService.coparaRespuestas(dropRespuesta, jsonRespuesta);
+    if (iguales) {
+      this.tips = this.obtenerDataService.obtenerTips('tips');
+      //crear un componente modal para mostrar estas sugerencias
+    }
+  }
+
+  public limpiarDrops(): void {
+    this.drops.length = 0;
   }
 
   // Llamar al método del servicio

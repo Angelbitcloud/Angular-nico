@@ -1,7 +1,7 @@
 export interface DataExplicacion {
     titulo: String;
-    introduccion: String;
     explicacion: String;
+    respuesta: String;
     imagen: String;
     pregunta: String;
 }

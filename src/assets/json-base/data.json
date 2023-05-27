@@ -3,7 +3,7 @@
       "titulo": "Create DataBase",
       "explicacion": "aqui se crea la bd",
       "pregunta": "aqui se explica como crear la bd",
-      "respuesta": "create database perritos;",
+      "respuesta": "create database perritos ;",
       "imagen": "assets/img/crear.png"
     },
     "drop-databse": {
@@ -161,5 +161,10 @@
       "introduccion": "",
       "explicacion": "",
       "imagen": ""
+    },
+    "tips": {
+      "sintaxis": "Asegúrate de que la consulta SQL esté correctamente escrita. Revisa si hay errores tipográficos",
+      "divideConquista": "Intenta dividirla en partes más pequeñas y revisa que todo este bien",
+      "documentacion": "Revisa nuevamente la explicacion teorica y el ejemplo"
     }
   }

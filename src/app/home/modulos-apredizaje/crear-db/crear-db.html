@@ -37,25 +37,25 @@
             <div class="boxdrag row">
                 <div class="boxDrop">
                     <h2 class="card-title">Palabras Clave</h2>
-                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="numbers1"
+                    <div class="boxContent" cdkDropList #ln1="cdkDropList" [cdkDropListData]="drags"
                         [cdkDropListConnectedTo]="[ln2]" (cdkDropListDropped)="dropItem($event)">
-                        <div cdkDrag class="block block-1" *ngFor="let n of numbers1">
+                        <div cdkDrag class="block block-1" *ngFor="let n of drags">
                             <span>{{n}}</span>
                         </div>
                     </div>
                 </div>
                 <div class="boxDrop">
                     <h2 class="card-title">Ordene Aqui</h2>
-                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="numbers2"
+                    <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="drops"
                         [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="dropItem($event)">
-                        <div cdkDrag class="block block-2" *ngFor="let n of numbers2">
+                        <div cdkDrag class="block block-2" *ngFor="let n of drops">
                             <span>{{n}}</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="contenedor-7">
-                <p class="Rbox">la respuesta es : {{comparisonResult}}</p>
+                <p class="Rbox">la respuesta es : {{resComparar}}</p>
                 <p-button pRipple label="Comparar Arreglos" color="#BC66F7" styleClass="p-button-raised " 
                     (click)="compareArrays()">
                 </p-button>
@@ -65,7 +65,7 @@
             </div>
                 <div class="contenedor-8">
                     <div class="grid-item">
-                        <p>{{ data.introduccion }}</p>
+                        <p>{{ data.explicacion }}</p>
                     </div>
                     <div class="grid-item2">
                         <img alt="boton icon" class="img4" [src]="data.imagen" />
