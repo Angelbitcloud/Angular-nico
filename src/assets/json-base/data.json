@@ -11,6 +11,12 @@
         "explicacion": "Operación para eliminar las base de datos existentes.",
         "imagen": "assets/img/borrar.png"
     },
+    "show-databse": {
+      "titulo": "Drop DataBase",
+      "introduccion": "Para eliminar bds basta con poner drop database databaseNombre",
+      "explicacion": "Operación para eliminar las base de datos existentes.",
+      "imagen": "assets/img/borrar.png"
+  },
     "create-table": {
       "titulo": "",
       "introduccion": "",
