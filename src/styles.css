@@ -240,27 +240,19 @@ body {
     margin-top: -35px;
 }
 
-
-
-
-
-
-
-
-
-
+/* modifica las cajas de texto de drop*/
 .block {
     display: inline-block;
     /* Ajusta el tamaño al contenido */
-    font-size: 24px;
-    padding: 10px;
+    font-size: 18px;
+    padding: 5px;
     margin: 10px;
     border: 1px solid #000;
 
 }
 
 .block-1 {
-    background: rgb(114, 84, 240);
+    background: #B99DE4;
     border-radius: 5px;
 }
 
@@ -317,9 +309,11 @@ body {
 }
 
 .grid-item {
+    margin-top: 120px;
     background-color: #f2f2f2;
-    /* Color de fondo de los elementos */
     padding: 10px;
+    text-align: justify;
+    line-height: 25px;
     /* Espacio interno de los elementos */
 }
 
@@ -327,4 +321,8 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
+}
+
+.Rtext{
+    font-size: 60px;
 }

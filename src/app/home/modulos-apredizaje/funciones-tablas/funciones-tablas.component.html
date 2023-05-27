@@ -31,7 +31,7 @@
                         <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
                     </ng-template>
                 </p-button>
-                <p class="textI">Select</p>
+                <p class="textI">Operaciones</p>
             </div>
             <div class="botones">
                 <p-button 
@@ -45,7 +45,7 @@
                         <img alt="boton icon" class="img4" src="assets/img/show.png" />
                     </ng-template>
                 </p-button>
-                <p class="textI">Where</p>
+                <p class="textI">Agrupamiento</p>
             </div>
         </div>
         <div class="contenedor-6">
@@ -69,48 +69,24 @@
                     </div>
                 </div>
             </div>
-            <p-scrollPanel [style]="{ width: '100%', height: '350px' }">
-                <div>
-                    <p>{{ data.titulo }}</p>
+            <div class="contenedor-7">
+                <p class="Rbox">la respuesta es : {{resComparar}}</p>
+                <p-button pRipple label="Comparar Arreglos" color="#BC66F7" styleClass="p-button-raised "
+                    (click)="compareArrays()">
+                </p-button>
+            </div>
+            <div class="span1">
+                <p>{{ data.titulo }}</p>
+            </div>
+            <div class="contenedor-8">
+                <div class="grid-item">
                     <p>{{ data.explicacion }}</p>
+                </div>
+                <div class="grid-item2">
                     <img alt="boton icon" class="img4" [src]="data.imagen" />
                 </div>
-                <p class="span1">
-                    Columnas Calculadas: Son columnas que se definen en una tabla pero cuyos valores se calculan
-                    automáticamente en función de otras columnas. Estas columnas se pueden crear utilizando expresiones
-                    y funciones en SQL para realizar cálculos o combinaciones de valores de otras columnas.
-                </p>
-                <p class="span1">
-                    Funciones Matemáticas: Las funciones matemáticas en SQL son operaciones que se aplican a valores
-                    numéricos para realizar cálculos matemáticos. Esto incluye funciones como SUM (suma), AVG
-                    (promedio), MAX (máximo), MIN (mínimo) y COUNT (conteo), entre otras. Estas funciones son útiles
-                    para realizar operaciones matemáticas en conjuntos de datos almacenados en tablas.
-                </p>
-                <p class="span1">
-                    Clausula de Orden: La cláusula ORDER BY se utiliza en SQL para especificar el orden en el que se
-                    deben devolver los registros de una consulta. Permite ordenar los resultados de una consulta en
-                    función de una o varias columnas, ya sea de forma ascendente (ASC) o descendente (DESC).
-                </p>
-                <p class="span1">
-                    Operaciones Lógicas: Las operaciones lógicas en SQL permiten realizar evaluaciones basadas en
-                    condiciones lógicas. Esto incluye operadores como AND, OR y NOT, que se utilizan para combinar
-                    condiciones y realizar evaluaciones booleanas en las consultas. Estas operaciones son útiles para
-                    filtrar datos en función de condiciones específicas.
-                </p>
-                <p class="span1">
-                    Patrones de Búsqueda: SQL proporciona operadores y funciones para realizar búsquedas de patrones en
-                    cadenas de texto. Esto incluye el uso del operador LIKE, que permite buscar registros que coincidan
-                    con un patrón específico utilizando caracteres comodín como '%' (cualquier cadena de caracteres) y
-                    '_' (cualquier carácter único).
-                </p>
-                <p class="span1 m-0">
-                    Funciones de Agrupamiento: Las funciones de agrupamiento en SQL se utilizan junto con la cláusula
-                    GROUP BY para realizar cálculos en grupos de registros en lugar de en el conjunto completo de datos.
-                    Estas funciones, como SUM, AVG, MAX, MIN y COUNT, se aplican a conjuntos de registros que cumplen
-                    con ciertas condiciones y devuelven resultados agregados, como la suma total, el promedio, el máximo
-                    valor, el mínimo valor y el conteo de registros en cada grupo.
-                </p>
-            </p-scrollPanel>
+                <p class="Qbox">caja de preguntas</p>
+            </div>
         </div>
     </div>
 </div>

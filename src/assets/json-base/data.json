@@ -1,196 +1,196 @@
 {
   "create-database": {
-    "Título": "Create DataBase",
-    "Explicación": "Aquí se crea la base de datos.",
-    "Pregunta": "¿Cómo se crea la base de datos?",
-    "Respuesta": "create database perritos ;",
-    "Imagen": "assets/img/crear.png"
+    "titulo": "Create DataBase",
+    "explicacion": "Aquí se crea la base de datos.",
+    "pregunta": "¿Cómo se crea la base de datos?",
+    "respuesta": "create database perritos ;",
+    "imagen": "assets/img/crear.png"
   },
   "drop-databse": {
-    "Título": "Drop DataBase",
-    "Explicación": "Aquí se elimina una base de datos existente.",
-    "Pregunta": "¿Cómo eliminar una base de datos?",
-    "Respuesta": "drop database databaseNombre;",
-    "Imagen": "assets/img/borrar.png"
+    "titulo": "Drop DataBase",
+    "explicacion": "Aquí se elimina una base de datos existente.",
+    "pregunta": "¿Cómo eliminar una base de datos?",
+    "respuesta": "drop database databaseNombre;",
+    "imagen": "assets/img/borrar.png"
   },
   "show-databse": {
-    "Título": "Show DataBase",
-    "Explicación": "Aquí se muestra la lista de bases de datos existentes.",
-    "Pregunta": "¿Cómo mostrar las bases de datos existentes?",
-    "Respuesta": "show databases;",
-    "Imagen": "assets/img/mostrar.png"
+    "titulo": "Show DataBase",
+    "explicacion": "Aquí se muestra la lista de bases de datos existentes.",
+    "pregunta": "¿Cómo mostrar las bases de datos existentes?",
+    "respuesta": "show databases;",
+    "imagen": "assets/img/mostrar.png"
   },
   "create-table": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Create",
+    "explicacion": "Crear una tabla: La sentencia CREATE TABLE se utiliza para crear una nueva tabla en la base de datos. Especificas el nombre de la tabla y las columnas que contendrá, junto con sus tipos de datos. Puedes definir restricciones como claves primarias, claves foráneas, valores predeterminados, restricciones de integridad, etc.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "drop-table": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Drop",
+    "explicacion": "Eliminar una tabla: La sentencia DROP TABLE se utiliza para eliminar una tabla existente de la base de datos. Proporcionas el nombre de la tabla que deseas eliminar. Al eliminar una tabla, se eliminan todos los datos y la estructura asociada a ella. Esta operación es irreversible, por lo que se recomienda tener precaución al eliminar tablas.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "insert-consulta": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Insert",
+    "explicacion": "INSERT INTO : \n La sentencia INSERT INTO es una de las operaciones más utilizadas en SQL para añadir nuevos registros a una tabla en una base de datos. Es una parte fundamental del lenguaje de manipulación de datos (DML) y permite insertar datos en una tabla específica, especificando los valores que se desean almacenar en cada columna. Cuando se utiliza la sentencia INSERT INTO, se deben proporcionar dos elementos principales: el nombre de la tabla y los valores a insertar. El nombre de la tabla indica en qué tabla se insertarán los datos, mientras que los valores representan los datos que se desean agregar en cada columna de la tabla. Es importante mencionar que los valores deben estar en el mismo orden que las columnas de la tabla. Esto significa que el primer valor se insertará en la primera columna, el segundo valor en la segunda columna, y así sucesivamente. Si no se proporciona un valor para una columna específica, se asumirá un valor nulo o se utilizará el valor predeterminado definido para esa columna. Además, la sentencia INSERT INTO permite insertar múltiples registros en una sola operación. Esto se logra al especificar conjuntos de valores separados por comas dentro de los paréntesis. Cada conjunto de valores representa un registro diferente que se insertará en la tabla. Esta capacidad de insertar múltiples registros en una sola sentencia es muy útil para mejorar la eficiencia y reducir la carga en la base de datos.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "select-consulta": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Select",
+    "explicacion": "La sentencia SELECT es una de las operaciones más utilizadas en SQL y tiene como objetivo recuperar datos de una o varias tablas en una base de datos. Esta sentencia permite realizar consultas a la base de datos y obtener conjuntos de datos específicos que cumplan ciertos criterios.\n La estructura básica de la sentencia SELECT consta de las siguientes cláusulas:\nSELECT: Es la cláusula principal y se utiliza para indicar qué columnas o expresiones se desean seleccionar de la tabla. Se puede especificar el nombre de las columnas individuales separadas por comas o utilizar asteriscos (*) para seleccionar todas las columnas de la tabla.\n FROM: Es la cláusula que especifica la tabla o tablas de las cuales se desea recuperar los datos. Se pueden incluir varias tablas utilizando la cláusula JOIN para combinar datos de diferentes tablas relacionadas.\nWHERE: Es una cláusula opcional que se utiliza para filtrar los registros basados en una condición específica. Permite especificar una o varias condiciones lógicas utilizando operadores como igual (=), mayor que (>), menor que (<), etc.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "where-consulta": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Where",
+    "explicacion": "La cláusula WHERE en SQL se utiliza para filtrar las filas de una tabla según una condición específica. Permite seleccionar solo aquellos registros que cumplan con ciertos criterios establecidos. Puedes utilizar operadores de comparación como igualdad, desigualdad, mayor que, menor que, mayor o igual que, menor o igual que, entre otros, para construir la condición. También puedes combinar múltiples condiciones usando operadores lógicos como AND y OR. La cláusula WHERE es útil para obtener resultados más precisos y relevantes en tus consultas. La condición en la cláusula WHERE es una expresión lógica que se evalúa para cada fila de la tabla. Puedes utilizar operadores de comparación como igualdad (=), desigualdad (!= o <>), mayor que (>), menor que (<), mayor o igual que (>=), menor o igual que (<=), entre otros, para construir la condición. La cláusula WHERE también se puede utilizar en combinación con otras cláusulas como ORDER BY para ordenar los resultados, GROUP BY para agrupar los registros, o JOIN para combinar datos de múltiples tablas. En resumen, la cláusula WHERE en SQL te permite realizar consultas más específicas al establecer condiciones que deben cumplir los registros seleccionados. Esto te ayuda a obtener conjuntos de datos más relevantes y útiles para tus necesidades de análisis y manipulación de datos. Además de la cláusula WHERE, puedes combinar la sentencia DELETE con otras cláusulas para refinar aún más tus operaciones de eliminación. Por ejemplo, la cláusula ORDER BY te permite especificar el orden en el que se deben eliminar los registros, mientras que la cláusula LIMIT te permite limitar la cantidad de registros eliminados en una sola ejecución. Es fundamental tener precaución al utilizar la sentencia DELETE, ya que los registros eliminados no se pueden recuperar fácilmente. Antes de ejecutarla, asegúrate de verificar tus condiciones y estar completamente seguro de los registros que serán afectados.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "delete-consulta": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Delete",
+    "explicacion": "La sentencia DELETE en SQL es una poderosa herramienta que te permite eliminar registros de una tabla en una base de datos. Cuando necesitas eliminar datos de manera permanente y precisa, la sentencia DELETE es tu aliada.La sintaxis básica de la sentencia DELETE consta de dos partes principales: la cláusula DELETE FROM y la cláusula WHERE. La cláusula DELETE FROM indica la tabla de la cual deseas eliminar registros, mientras que la cláusula WHERE establece las condiciones que deben cumplir los registros que serán eliminados.Al utilizar la sentencia DELETE, tienes el control total sobre qué registros se eliminarán. Puedes especificar condiciones complejas utilizando operadores lógicos y comparativos, lo que te permite eliminar registros basados en múltiples criterios.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "primary-key-consulta": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Primary Key ",
+    "explicacion": "La Primary Key, también conocida como Clave Primaria, desempeña un papel fundamental en la estructura y el diseño de una base de datos. Es un atributo o conjunto de atributos que se utiliza para identificar de manera única cada registro en una tabla.La Primary Key tiene varias características clave que la distinguen de otros atributos en una tabla. En primer lugar, garantiza la unicidad de cada registro en la tabla. Esto significa que no puede haber dos registros con el mismo valor de Primary Key en una tabla. Cada valor de Primary Key debe ser único y diferente de los demás.En segundo lugar, la Primary Key garantiza la integridad de los datos en la tabla. Al ser un identificador único para cada registro, evita la duplicación de datos y asegura que no haya registros duplicados en la tabla. Esto es especialmente útil cuando se trabaja con grandes volúmenes de datos, ya que la Primary Key actúa como una referencia única para cada registro.Otra característica importante de la Primary Key es que no puede contener valores nulos. Cada registro en la tabla debe tener un valor válido para la Primary Key. Esto asegura que todos los registros sean identificables y que no haya ambigüedad en la tabla.En resumen, la Primary Key es un atributo o conjunto de atributos que identifica de forma única cada registro en una tabla. Proporciona unicidad, integridad y referencia en la base de datos. Al garantizar la unicidad y la integridad de los datos, la Primary Key juega un papel crucial en el diseño y la eficiencia de las bases de datos.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "foreign-key-consulta": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Foreign Key",
+    "explicacion": "La Foreign Key, también conocida como Clave Externa, es un atributo o conjunto de atributos en una tabla que establece una relación con la Primary Key de otra tabla en una base de datos relacional.La función principal de la Foreign Key es mantener la integridad referencial y establecer una conexión entre dos tablas relacionadas. Permite crear relaciones entre tablas y garantiza que los datos estén correctamente vinculados y actualizados en ambas tablas.Cuando se define una Foreign Key en una tabla, se establece una referencia a la Primary Key correspondiente en otra tabla. Esta relación puede ser uno a uno, uno a muchos o muchos a muchos, dependiendo de cómo se diseñen las tablas y las relaciones entre ellas.La Foreign Key contiene valores que coinciden con los valores de la Primary Key en la tabla relacionada. Esto significa que los valores de la Foreign Key deben existir en la tabla referenciada como claves primarias. Esto asegura que solo se puedan establecer relaciones válidas entre los registros de ambas tablas.Es importante destacar que la Foreign Key también puede tener valores nulos si la relación es opcional. Esto permite que existan registros en la tabla que no tengan una relación establecida con la tabla referenciada. En estos casos, la Foreign Key se establece como nula para indicar que no hay un valor correspondiente en la tabla referenciada.Al utilizar Foreign Keys, se pueden realizar consultas y operaciones que involucren múltiples tablas relacionadas. Esto facilita la recuperación de información y el mantenimiento de la coherencia de los datos en la base de datos.En resumen, la Foreign Key es un atributo o conjunto de atributos en una tabla que establece una relación con la Primary Key de otra tabla. Su función principal es mantener la integridad referencial y establecer conexiones entre tablas relacionadas. Al vincular los valores de la Foreign Key con los de la Primary Key, se asegura que los datos estén correctamente relacionados y actualizados en la base de datos.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "entero-dato": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Enteros",
+    "explicacion": "En el contexto de las bases de datos, los tipos de datos enteros, también conocidos como Integer, son utilizados para representar números enteros sin decimales. Estos tipos de datos permiten almacenar valores numéricos completos, sin fracciones ni componentes decimales.Existen diferentes tamaños y variantes de tipos de datos enteros que se pueden utilizar en las bases de datos, como INT (entero), SMALLINT (entero pequeño) y BIGINT (entero grande), entre otros. La elección del tipo de dato entero adecuado dependerá de los rangos de valores que se deseen almacenar y de los requisitos de almacenamiento y rendimiento de la base de datos.El tipo de dato INT, por ejemplo, suele ser utilizado para representar enteros en un rango específico, generalmente entre -2,147,483,648 y 2,147,483,647 en sistemas que utilizan 32 bits para su representación. Este rango puede variar dependiendo del sistema de gestión de bases de datos utilizado y de la configuración específica.El tipo de dato SMALLINT, por otro lado, se utiliza para representar enteros más pequeños, generalmente en un rango más limitado, como -32,768 a 32,767 en sistemas de 16 bits.Por último, el tipo de dato BIGINT se emplea para almacenar enteros de mayor magnitud, permitiendo representar valores más grandes en un rango mucho más amplio, como -9,223,372,036,854,775,808 a 9,223,372,036,854,775,807 en sistemas de 64 bits.En resumen, los tipos de datos enteros son utilizados en las bases de datos para representar números enteros sin decimales. Permiten almacenar valores numéricos completos y se especifican mediante tipos como INT, SMALLINT y BIGINT, entre otros. La elección del tipo de dato adecuado dependerá de los rangos de valores requeridos y de los requisitos de almacenamiento y rendimiento de la base de datos.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "decimal-dato": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Decimal",
+    "explicacion": "En el ámbito de las bases de datos, los decimales o números de punto flotante son utilizados para representar valores numéricos que incluyen componentes decimales. Estos tipos de datos son especialmente útiles cuando se requiere precisión en cálculos que involucran fracciones o valores no enteros.Existen dos categorías principales de tipos de datos decimales: los de precisión fija y los de precisión variable.Los tipos de datos de precisión fija, como DECIMAL y NUMERIC, permiten especificar la precisión y la escala de los valores decimales. La precisión se refiere al número total de dígitos que pueden ser almacenados, mientras que la escala se refiere al número de dígitos que se reservan para los decimales. Por ejemplo, un tipo de dato DECIMAL(8, 2) puede almacenar números con hasta 8 dígitos en total, de los cuales 2 dígitos se utilizan para los decimales.Por otro lado, los tipos de datos de precisión variable, como FLOAT y REAL, permiten representar números de punto flotante con una precisión que puede variar según el valor. Estos tipos de datos ocupan menos espacio en disco en comparación con los de precisión fija, pero pueden tener una menor precisión en algunos casos. El tipo de dato FLOAT es de precisión simple, mientras que el tipo de dato REAL es de precisión doble.En resumen, los tipos de datos decimales se utilizan en las bases de datos para representar valores numéricos que incluyen decimales. Pueden ser de precisión fija (DECIMAL, NUMERIC), donde se especifica la precisión y la escala de los valores, o de precisión variable (FLOAT, REAL), que ofrecen una mayor flexibilidad en la precisión. Es importante considerar las implicaciones de precisión y redondeo al utilizar estos tipos de datos en operaciones matemáticas y asegurarse de elegir el tipo de dato adecuado según los requisitos de la aplicación",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "cadenas-dato": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Cadenas",
+    "explicacion": "En el contexto de las bases de datos, las cadenas de caracteres o strings se utilizan para representar datos de texto, como nombres, descripciones, direcciones, entre otros. Estos tipos de datos son fundamentales para almacenar información textual en una base de datos.Existen dos categorías principales de tipos de datos de cadenas de caracteres: los de longitud fija y los de longitud variable.Los tipos de datos de longitud fija, como CHAR, permiten almacenar cadenas de caracteres con una longitud predeterminada. Esto significa que se asigna un espacio fijo en memoria para cada valor de tipo CHAR, independientemente de la longitud real del dato almacenado. Por ejemplo, un campo de tipo CHAR(10) reservará exactamente 10 caracteres de espacio, incluso si el texto almacenado solo ocupa 5 caracteres. Si el texto es más corto que la longitud especificada, se llenará con espacios en blanco. Esto asegura que cada valor ocupe el mismo espacio en disco, lo que puede ser útil en ciertos escenarios.En resumen, los tipos de datos de cadenas de caracteres se utilizan para almacenar datos de texto en una base de datos. Pueden ser de longitud fija (CHAR) o de longitud variable (VARCHAR, TEXT). Los tipos de datos de longitud fija asignan un espacio fijo en memoria para cada valor, mientras que los tipos de datos de longitud variable se adaptan automáticamente a la longitud del texto almacenado. La elección del tipo de dato depende de los requisitos específicos de la aplicación y de la naturaleza de los datos que se van a almacenar.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "fecha-dato": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Fecha",
+    "explicacion": "En las bases de datos, los tipos de datos de fechas y horas se utilizan para almacenar y manipular valores relacionados con la fecha y la hora. Estos tipos de datos son esenciales para registrar eventos, realizar cálculos temporales y realizar consultas basadas en fechas y horas.Existen varios tipos de datos relacionados con fechas y horas, cada uno con sus características y propósitos específicos.El tipo de dato DATE se utiliza para almacenar únicamente información de fecha, sin tener en cuenta la hora del día. Este tipo de dato permite representar fechas como YYYY-MM-DD (año-mes-día), donde YYYY representa el año con cuatro dígitos, MM el mes con dos dígitos y DD el día del mes con dos dígitos.El tipo de dato TIME se utiliza para almacenar únicamente información de hora, sin tener en cuenta la fecha. Este tipo de dato permite representar horas como HH:MM:SS (hora:minuto:segundo), donde HH representa la hora en formato de 24 horas, MM los minutos y SS los segundos.El tipo de dato DATETIME combina la información de fecha y hora en un solo valor. Permite representar fechas y horas en el formato YYYY-MM-DD HH:MM:SS y es útil cuando se requiere almacenar y manipular registros que contienen tanto fecha como hora.El tipo de dato TIMESTAMP se utiliza para almacenar un valor de fecha y hora, similar al DATETIME. Sin embargo, el TIMESTAMP suele ser más compacto en términos de almacenamiento y puede tener un rango de valores más limitado, dependiendo del sistema de gestión de bases de datos utilizado.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "order-consulta": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Orden",
+    "explicacion": "El ordenamiento en bases de datos es un proceso mediante el cual se organizan los registros de una tabla en un orden específico, generalmente basado en los valores de una o más columnas. El ordenamiento permite presentar los datos de manera estructurada y facilita la búsqueda, clasificación y análisis de la información.En una consulta SQL, el ordenamiento se realiza mediante la cláusula ORDER BY. Esta cláusula permite especificar una o más columnas por las cuales se desea ordenar los registros, y se puede indicar si el orden debe ser ascendente (ASC) o descendente (DESC).Algunas consideraciones importantes sobre el ordenamiento son:Ordenamiento ascendente y descendente: Mediante la cláusula ORDER BY, se puede establecer si el ordenamiento debe ser ascendente o descendente. El orden ascendente (ASC) organiza los registros en orden creciente (de menor a mayor) según los valores de la columna especificada. Por otro lado, el orden descendente (DESC) organiza los registros en orden decreciente (de mayor a menor).Ordenamiento por múltiples columnas: Es posible especificar múltiples columnas en la cláusula ORDER BY para realizar un ordenamiento más complejo. En este caso, los registros se ordenan primero por la primera columna indicada, y en caso de empate, se ordenan por la siguiente columna especificada, y así sucesivamente. Esto permite establecer un ordenamiento jerárquico basado en diferentes atributos.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "select-funciones": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Operaciones",
+    "explicacion": "Las operaciones lógicas en bases de datos son utilizadas para realizar comparaciones y evaluaciones basadas en condiciones lógicas. Estas operaciones permiten filtrar y combinar datos en consultas SQL de acuerdo con ciertas condiciones establecidas.Las principales operaciones lógicas utilizadas en bases de datos son:Operador de igualdad (=): Este operador se utiliza para verificar si dos valores son iguales. Por ejemplo, en una consulta SELECT, se puede utilizar la cláusula WHERE junto con el operador de igualdad para seleccionar registros que cumplan con una condición específica.Operadores de desigualdad: Estos operadores se utilizan para comparar si dos valores son diferentes. Los operadores de desigualdad comunes son: <> (diferente), < (menor que), > (mayor que), <= (menor o igual que) y >= (mayor o igual que). Estos operadores se utilizan en combinación con la cláusula WHERE para filtrar registros según condiciones de desigualdad.Operadores lógicos AND, OR y NOT: Estos operadores lógicos se utilizan para combinar múltiples condiciones en una consulta SQLEl operador AND se utiliza para evaluar si se cumplen dos o más condiciones simultáneamente. Por ejemplo, se puede usar para seleccionar registros que cumplan con dos criterios diferentes al mismo tiempoEl operador OR se utiliza para evaluar si se cumple al menos una de las condiciones. Por ejemplo, se puede usar para seleccionar registros que cumplan con uno de varios criterios posibles.El operador NOT se utiliza para negar una condición. Por ejemplo, se puede usar para seleccionar registros que no cumplan con una determinada condición.    ",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "where-funciones": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Agrupamiento",
+    "explicacion": "El agrupamiento en bases de datos es una técnica que permite combinar registros similares en grupos o conjuntos basados en ciertas condiciones o atributos comunes. Es una operación fundamental en el procesamiento de datos y se utiliza para resumir, organizar y analizar grandes volúmenes de información.El agrupamiento se realiza mediante el uso de la cláusula GROUP BY en una consulta SQL. Esta cláusula especifica los atributos por los cuales se desea agrupar los registros y crea grupos separados para cada valor único o combinación de valores en esos atributos.Las funciones de agrupamiento, también conocidas como funciones de agregado, se utilizan junto con la cláusula GROUP BY para realizar cálculos y resúmenes en cada grupo de registros. Estas funciones operan en conjuntos de datos dentro de cada grupo y devuelven un solo valor que representa el resultado de la operación.Algunas de las funciones de agrupamiento más comunes son:SUM: Calcula la suma de los valores de una columna numérica en un grupo. AVG: Calcula el promedio de los valores de una columna numérica en un grupo.COUNT: Cuenta el número de registros en un grupo. MIN: Devuelve el valor mínimo de una columna en un grupo.MAX: Devuelve el valor máximo de una columna en un grupo.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "alter-table-drop": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Alter Table Drop",
+    "explicacion": "La instrucción ALTER TABLE DROP es utilizada en bases de datos para eliminar una columna existente de una tabla. Esta operación permite eliminar de forma permanente una columna específica junto con todos los datos y metadatos asociados a ella.Para utilizar la instrucción ALTER TABLE DROP, se deben especificar dos elementos principales: el nombre de la tabla y el nombre de la columna que se desea eliminar.Donde nombre_tabla es el nombre de la tabla de la cual se quiere eliminar la columna, y nombre_columna es el nombre de la columna que se desea eliminar.Es importante tener en cuenta que al ejecutar la instrucción ALTER TABLE DROP, se eliminarán permanentemente todos los datos contenidos en la columna especificada, así como cualquier restricción o índice asociado a dicha columna. Por lo tanto, se debe tener precaución al utilizar esta instrucción, ya que puede afectar la integridad y la estructura de la tabla.En resumen, la instrucción ALTER TABLE DROP es utilizada para eliminar de manera permanente una columna existente en una tabla de la base de datos. Esto permite realizar modificaciones en la estructura de la tabla y eliminar datos no deseados o innecesarios. Sin embargo, se debe tener cuidado al utilizar esta instrucción para evitar la pérdida de información importante y garantizar la integridad de los datos.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "alter-table-add": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Alter Table Add",
+    "explicacion": "La instrucción ALTER TABLE ADD se utiliza en bases de datos para agregar una nueva columna a una tabla existente. Esta operación permite definir el nombre de la columna, el tipo de datos, la longitud (si corresponde) y otras características de la columna.Para utilizar la instrucción ALTER TABLE ADD, se deben especificar tres elementos principales: el nombre de la tabla, el nombre de la columna que se desea agregar y los detalles de la columna.Donde nombre_tabla es el nombre de la tabla a la cual se desea agregar la columna, nombre_columna es el nombre que se le dará a la nueva columna y tipo_datos es el tipo de datos que se asignará a la columna.Además del tipo de datos, se pueden especificar otras características opcionales para la nueva columna, como la longitud (en caso de tipos de datos que la requieran), restricciones, valores predeterminados, entre otros.En resumen, la instrucción ALTER TABLE ADD es utilizada para agregar una nueva columna a una tabla existente en una base de datos. Esto permite ampliar la estructura de la tabla y definir características específicas para la nueva columna. Es importante tener en cuenta la sintaxis y las opciones específicas del sistema de gestión de bases de datos utilizado para asegurarse de utilizar correctamente esta instrucción y mantener la integridad de los datos.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "alter-table-rename": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Alter Table Rename",
+    "explicacion": "La instrucción ALTER TABLE RENAME se utiliza en bases de datos para cambiar el nombre de una tabla existente. Esta operación permite cambiar el nombre de la tabla, y opcionalmente, también el nombre de su esquema o base de datos.Para utilizar la instrucción ALTER TABLE RENAME, se deben especificar dos elementos principales: el nombre actual de la tabla y el nuevo nombre que se desea asignar.Donde nombre_tabla es el nombre actual de la tabla y nuevo_nombre es el nuevo nombre que se desea asignar.Es importante tener en cuenta que al utilizar la instrucción ALTER TABLE RENAME, se cambiará el nombre de la tabla en la base de datos, y cualquier referencia a la tabla con el nombre anterior ya no será válida. Si la tabla se encuentra en un esquema específico o base de datos, se mantendrá en el mismo esquema o base de datos después de cambiar su nombre.En resumen, la instrucción ALTER TABLE RENAME se utiliza para cambiar el nombre de una tabla existente en una base de datos. Esto permite actualizar el nombre de la tabla de acuerdo a las necesidades del sistema y mantener una mejor organización de los objetos de la base de datos. Es importante tener en cuenta la sintaxis y las opciones específicas del sistema de gestión de bases de datos utilizado para asegurarse de utilizar correctamente esta instrucción y evitar problemas con las referencias a la tabla.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "inner-join": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Inner Join",
+    "explicacion": "El INNER JOIN es una operación de unión utilizada en bases de datos relacionales para combinar registros de dos o más tablas en función de una condición de coincidencia. La operación INNER JOIN devuelve únicamente los registros que tienen coincidencias en ambas tablas involucradas en la unión, es decir, solo los registros que satisfacen la condición de unión establecida.En esta sintaxis, tabla1 y tabla2 son los nombres de las tablas que se desean unir, y columna es el nombre de la columna común en ambas tablas que se utilizará como criterio de unión. La condición de unión se establece mediante la cláusula ON, donde se especifica la igualdad entre las columnas que se utilizarán para comparar los registros.Cuando se ejecuta un INNER JOIN, se comparan los valores de la columna especificada en ambas tablas. Si los valores son iguales, los registros se combinan en el resultado final. Solo los registros que tienen coincidencias en ambas tablas se incluirán en el resultado.En resumen, el INNER JOIN es una operación de unión en bases de datos relacionales que combina registros de dos o más tablas en función de una condición de coincidencia. Solo los registros que tienen coincidencias en ambas tablas se incluyen en el resultado. Esta operación es útil cuando se desea combinar información relacionada de diferentes tablas en una consulta.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "right-join": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Right Join",
+    "explicacion": "El RIGHT JOIN es una operación de unión utilizada en bases de datos relacionales para combinar registros de dos tablas en función de una condición de coincidencia, devolviendo todos los registros de la tabla de la derecha (tabla del lado derecho) y solo los registros correspondientes de la tabla de la izquierda (tabla del lado izquierdo).En esta sintaxis, tabla1 es la tabla del lado izquierdo y tabla2 es la tabla del lado derecho que se desean unir. La condición de unión se establece mediante la cláusula ON, donde se especifica la igualdad entre las columnas que se utilizarán para comparar los registros.Cuando se ejecuta un RIGHT JOIN, se comparan los valores de la columna especificada en ambas tablas. Si los valores son iguales, los registros se combinan en el resultado final. Sin embargo, a diferencia del INNER JOIN, el RIGHT JOIN garantiza que todos los registros de la tabla de la derecha se incluyan en el resultado, incluso si no tienen coincidencias en la tabla de la izquierda. Si no hay coincidencias, se mostrarán valores NULL en las columnas de la tabla de la izquierda.El RIGHT JOIN se utiliza cuando se desea obtener todos los registros de la tabla de la derecha y solo los registros correspondientes de la tabla de la izquierda. Esto puede ser útil en situaciones donde la tabla de la derecha es la principal y se desea asegurar que todos sus registros estén presentes en el resultado, incluso si no hay coincidencias en la tabla de la izquierda.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "left-join": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Left Join",
+    "explicacion": "El LEFT JOIN es una operación de unión utilizada en bases de datos relacionales para combinar registros de dos tablas en función de una condición de coincidencia, devolviendo todos los registros de la tabla de la izquierda (tabla del lado izquierdo) y solo los registros correspondientes de la tabla de la derecha (tabla del lado derecho).En esta sintaxis, tabla1 es la tabla del lado izquierdo y tabla2 es la tabla del lado derecho que se desean unir. La condición de unión se establece mediante la cláusula ON, donde se especifica la igualdad entre las columnas que se utilizarán para comparar los registros.Al ejecutar un LEFT JOIN, se comparan los valores de la columna especificada en ambas tablas. Si los valores son iguales, los registros se combinan en el resultado final. La diferencia principal con el RIGHT JOIN es que el LEFT JOIN garantiza que todos los registros de la tabla de la izquierda estén presentes en el resultado, incluso si no tienen coincidencias en la tabla de la derecha. Si no hay coincidencias, se mostrarán valores NULL en las columnas de la tabla de la derecha.  El LEFT JOIN se utiliza cuando se desea obtener todos los registros de la tabla de la izquierda y solo los registros correspondientes de la tabla de la derecha. Esto puede ser útil en situaciones donde la tabla de la izquierda es la principal y se desea asegurar que todos sus registros estén presentes en el resultado, incluso si no hay coincidencias en la tabla de la derecha.Es importante tener en cuenta que la posición de las tablas en la cláusula LEFT JOIN es significativa. La tabla del lado izquierdo se considera la tabla principal, cuyos registros se mantienen todos en el resultado, mientras que los registros de la tabla del lado derecho solo se incluyen si coinciden con la condición de unión.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "udate-delete": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Update-Delete",
+    "explicacion": "Las subconsultas de actualización y eliminación se refieren a la utilización de una subconsulta en la cláusula WHERE de las sentencias UPDATE y DELETE. La subconsulta se utiliza para obtener los resultados que se utilizarán como criterio para la actualización o eliminación.Por ejemplo, en una subconsulta de actualización, se puede realizar una consulta secundaria para obtener ciertos registros y luego utilizar los resultados para modificar los valores de una columna en la tabla principal. De manera similar, en una subconsulta de eliminación, se puede realizar una consulta secundaria para obtener ciertos registros y luego utilizar los resultados para eliminar esos registros de la tabla principal.El uso de subconsultas en las sentencias UPDATE y DELETE brinda flexibilidad y permite realizar modificaciones o eliminaciones basadas en condiciones más complejas y resultados obtenidos de otras consultas.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "exist-not-exist": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Exists’ Not Exists",
+    "explicacion": "Las subconsultas EXISTS y NOT EXISTS son utilizadas en bases de datos para verificar la existencia de registros en una tabla basándose en los resultados de una subconsulta. La subconsulta EXISTS se utiliza para comprobar si existe al menos un registro en una tabla que cumple ciertas condiciones especificadas en la subconsulta. Si la subconsulta devuelve algún resultado, la condición se considera verdadera y se ejecuta la acción correspondiente.En esta sintaxis, columna(s) representa las columnas que se desean seleccionar en la subconsulta. tabla es la tabla sobre la cual se realiza la consulta. La subconsulta se especifica dentro de la cláusula EXISTS, y puede contener cualquier consulta válida que devuelva un resultado.Por otro lado, la subconsulta NOT EXISTS se utiliza para comprobar si no existe ningún registro en una tabla que cumpla ciertas condiciones especificadas en la subconsulta. Si la subconsulta no devuelve ningún resultado, la condición se considera verdadera y se ejecuta la acción correspondiente.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "any-some-all": {
-    "Título": "",
-    "Explicación": "",
-    "Pregunta": "",
-    "Respuesta": "",
-    "Imagen": ""
+    "titulo": "Any-Some-All",
+    "explicacion": "as subconsultas ANY, SOME y ALL se utilizan en bases de datos para comparar un valor con un conjunto de valores devueltos por una subconsulta.La subconsulta ANY se utiliza para verificar si un valor coincide con al menos uno de los valores devueltos por la subconsulta. Es similar al uso del operador de comparación IN, pero en lugar de proporcionar una lista de valores explícitos, se utiliza una subconsulta para obtener los valores a comparar.En esta sintaxis, valor es el valor que se desea comparar y comparación puede ser cualquier operador de comparación válido, como =, <, >, etc. La subconsulta debe devolver un conjunto de valores con los cuales se realizará la comparación.La subconsulta SOME se utiliza de manera similar a ANY. También se utiliza para comparar un valor con un conjunto de valores devueltos por una subconsulta, y devuelve verdadero si el valor coincide con al menos uno de los valores de la subconsulta Por último, la subconsulta ALL se utiliza para verificar si un valor coincide con todos los valores devueltos por la subconsulta. Devolverá verdadero si el valor se encuentra en todos los valores de la subconsulta.",
+    "pregunta": "",
+    "respuesta": "",
+    "imagen": ""
   },
   "tips": {
-    "Sintaxis": "Asegúrate de que la consulta SQL esté correctamente escrita. Revisa si hay errores tipográficos.",
-    "DivideConquista": "Intenta dividir la consulta en partes más pequeñas y revisa que todo esté bien.",
-    "Documentación": "Revisa nuevamente la explicación teórica y el ejemplo."
+    "sintaxis": "Asegúrate de que la consulta SQL esté correctamente escrita. Revisa si hay errores tipográficos.",
+    "divideconquista": "Intenta dividir la consulta en partes más pequeñas y revisa que todo esté bien.",
+    "documentacion": "Revisa nuevamente la explicación teórica y el ejemplo."
   }
 }

@@ -83,35 +83,24 @@
                     </div>
                 </div>
             </div>
-            <p-scrollPanel [style]="{ width: '100%', height: '350px' }">
-                <div>
-                    <p>{{ data.titulo }}</p>
+            <div class="contenedor-7">
+                <p class="Rbox">la respuesta es : {{resComparar}}</p>
+                <p-button pRipple label="Comparar Arreglos" color="#BC66F7" styleClass="p-button-raised "
+                    (click)="compareArrays()">
+                </p-button>
+            </div>
+            <div class="span1">
+                <p>{{ data.titulo }}</p>
+            </div>
+            <div class="contenedor-8">
+                <div class="grid-item">
                     <p>{{ data.explicacion }}</p>
+                </div>
+                <div class="grid-item2">
                     <img alt="boton icon" class="img4" [src]="data.imagen" />
                 </div>
-                <p class="span1">
-                    En SQL, los tipos de datos son utilizados para definir el tipo de valor que puede almacenarse en una
-                    columna de una tabla. Los tipos de datos en SQL varían dependiendo del sistema de gestión de bases
-                    de datos (SGBD) utilizado, pero a continuación se presentan los tipos de datos más comunes:</p>
-                <p class="span1">
-                    Enteros (Integer): Representan números enteros sin decimales. Pueden ser de diferentes tamaños y se
-                    pueden especificar como INT, SMALLINT, BIGINT, entre otros.</p>
-                <p class="span1">
-                    Decimales o números de punto flotante (Decimal/Float): Representan números con decimales. Pueden ser
-                    de precisión fija (DECIMAL, NUMERIC) o de precisión variable (FLOAT, REAL).</p>
-                <p class="span1">
-                    Cadenas de caracteres (Character Strings): Representan datos de texto. Pueden ser de longitud fija
-                    (CHAR) o de longitud variable (VARCHAR, TEXT).</p>
-                <p class="span1">
-                    Fechas y horas (Date/Time): Representan valores de fecha y hora. Pueden ser DATE (solo fecha), TIME
-                    (solo hora), DATETIME (fecha y hora), TIMESTAMP, entre otros.
-                </p>
-                <p class="span1 m-0">
-                    Es importante tener en cuenta que los tipos de datos pueden tener diferentes precisiones, longitudes
-                    y restricciones dependiendo del SGBD y la implementación específica. Además, algunos SGBD también
-                    ofrecen extensiones o tipos de datos personalizados para adaptarse a necesidades específicas.
-                </p>
-            </p-scrollPanel>
+                <p class="Qbox">caja de preguntas</p>
+            </div>
         </div>
     </div>
 </div>

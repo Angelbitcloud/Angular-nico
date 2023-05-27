@@ -30,7 +30,7 @@
                         <img alt="boton icon" class="img4" src="assets/img/show.png" />
                     </ng-template>
                 </p-button>
-                <p class="textI">Show</p> 
+                <p class="textI">Show</p>
             </div>
         </div>
         <div class="contenedor-6">
@@ -55,23 +55,25 @@
                 </div>
             </div>
             <div class="contenedor-7">
-                <p class="Rbox">la respuesta es : {{resComparar}}</p>
-                <p-button pRipple label="Comparar Arreglos" color="#BC66F7" styleClass="p-button-raised " 
+                <div class="Rbox">
+                    <p class="Rtext">la respuesta es : {{resComparar}}</p>
+                </div>
+                <p-button pRipple label="Comparar Arreglos" color="#BC66F7" styleClass="p-button-raised "
                     (click)="compareArrays()">
                 </p-button>
             </div>
             <div class="span1">
                 <p>{{ data.titulo }}</p>
             </div>
-                <div class="contenedor-8">
-                    <div class="grid-item">
-                        <p>{{ data.explicacion }}</p>
-                    </div>
-                    <div class="grid-item2">
-                        <img alt="boton icon" class="img4" [src]="data.imagen" />
-                    </div>
-                    <p class="Qbox">caja de preguntas</p>
+            <div class="contenedor-8">
+                <div class="grid-item">
+                    <p>{{ data.explicacion }}</p>
                 </div>
+                <div class="grid-item2">
+                    <img alt="boton icon" class="img4" [src]="data.imagen" />
+                </div>
+                <p class="Qbox">caja de preguntas</p>
+            </div>
         </div>
     </div>
 </div>

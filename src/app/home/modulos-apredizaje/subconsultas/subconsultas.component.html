@@ -45,7 +45,7 @@
                         <img alt="boton icon" class="img4" src="assets/img/show.png" />
                     </ng-template>
                 </p-button>
-                <p class="textI"> Any-Some-All</p>
+                <p class="textI">Any-Some-All</p>
             </div>
         </div>
         <div class="contenedor-6">
@@ -69,37 +69,24 @@
                     </div>
                 </div>
             </div>
-            <p-scrollPanel [style]="{ width: '100%', height: '350px' }">
-                <div>
-                    <p>{{ data.titulo }}</p>
+            <div class="contenedor-7">
+                <p class="Rbox">la respuesta es : {{resComparar}}</p>
+                <p-button pRipple label="Comparar Arreglos" color="#BC66F7" styleClass="p-button-raised "
+                    (click)="compareArrays()">
+                </p-button>
+            </div>
+            <div class="span1">
+                <p>{{ data.titulo }}</p>
+            </div>
+            <div class="contenedor-8">
+                <div class="grid-item">
                     <p>{{ data.explicacion }}</p>
+                </div>
+                <div class="grid-item2">
                     <img alt="boton icon" class="img4" [src]="data.imagen" />
                 </div>
-                <p class="span1">
-                    Las subconsultas son consultas SQL que se incluyen dentro de otras consultas. Son útiles cuando se
-                    necesita realizar una consulta más compleja que involucra datos de diferentes tablas o cuando se
-                    requiere realizar cálculos o filtrar datos basados en los resultados de una consulta anterior.</p>
-                <p class="span1">
-                    Update-Delete: Las subconsultas de actualización y eliminación se utilizan para actualizar o
-                    eliminar registros en una tabla basándose en los resultados de una subconsulta. Por ejemplo, se
-                    puede utilizar una subconsulta de actualización para modificar los valores de una columna en una
-                    tabla en función de los resultados de una consulta secundaria.</p>
-                <p class="span1">
-                    Exists-Not Exists: Las subconsultas "Exists" y "Not Exists" se utilizan para verificar la existencia
-                    de registros en una tabla basándose en los resultados de una subconsulta. Por ejemplo, se puede
-                    utilizar una subconsulta "Exists" para comprobar si existen registros en una tabla que cumplan
-                    ciertas condiciones antes de realizar una acción.</p>
-                <p class="span1">
-                    Any-Some-All: Las subconsultas "Any", "Some" y "All" se utilizan para comparar un valor con un
-                    conjunto de valores devueltos por una subconsulta. Por ejemplo, se puede utilizar una subconsulta
-                    "Any" para verificar si un valor coincide con al menos uno de los valores devueltos por la
-                    subconsulta.</p>
-                <p class="span1 m-0">
-                    Estas subconsultas permiten realizar consultas más complejas y avanzadas al combinar múltiples
-                    operaciones y criterios en una sola consulta. Ayudan a hacer las consultas más flexibles y poderosas
-                    al aprovechar los resultados de consultas secundarias para realizar acciones específicas o aplicar
-                    condiciones adicionales.</p>
-            </p-scrollPanel>
+                <p class="Qbox">caja de preguntas</p>
+            </div>
         </div>
     </div>
 </div>

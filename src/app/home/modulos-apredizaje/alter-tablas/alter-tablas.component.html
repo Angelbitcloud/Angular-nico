@@ -69,38 +69,24 @@
                     </div>
                 </div>
             </div>
-            <p-scrollPanel [style]="{ width: '100%', height: '350px' }">
-                <div>
-                    <p>{{ data.titulo }}</p>
+            <div class="contenedor-7">
+                <p class="Rbox">la respuesta es : {{resComparar}}</p>
+                <p-button pRipple label="Comparar Arreglos" color="#BC66F7" styleClass="p-button-raised "
+                    (click)="compareArrays()">
+                </p-button>
+            </div>
+            <div class="span1">
+                <p>{{ data.titulo }}</p>
+            </div>
+            <div class="contenedor-8">
+                <div class="grid-item">
                     <p>{{ data.explicacion }}</p>
+                </div>
+                <div class="grid-item2">
                     <img alt="boton icon" class="img4" [src]="data.imagen" />
                 </div>
-                <p class="span1">
-                    Alter Table Drop: Esta alteración se utiliza para eliminar una columna existente de una tabla.
-                    Permite eliminar una columna específica junto con sus datos y metadatos asociados. Al utilizar esta
-                    instrucción, se debe especificar el nombre de la tabla y el nombre de la columna que se desea
-                    eliminar.
-                </p>
-                <p class="span1">
-                    Alter Table Add: Esta alteración se utiliza para agregar una nueva columna a una tabla existente.
-                    Permite definir el nombre de la columna, el tipo de datos, la longitud (si corresponde) y otras
-                    características de la columna. Al utilizar esta instrucción, se debe especificar el nombre de la
-                    tabla y los detalles de la columna que se desea agregar.
-                </p>
-                <p class="span1">
-                    Alter Table Rename: Esta alteración se utiliza para cambiar el nombre de una tabla existente.
-                    Permite cambiar el nombre de una tabla y, opcionalmente, también el nombre de su esquema o base de
-                    datos. Al utilizar esta instrucción, se debe especificar el nombre actual de la tabla y el nuevo
-                    nombre que se desea asignar.
-                </p>
-                <p class="span1 m-0">
-                    En resumen, estas alteraciones de tabla brindan la capacidad de modificar la estructura de una tabla
-                    existente en una base de datos. Con Alter Table Drop, se pueden eliminar columnas no deseadas,
-                    mientras que con Alter Table Add se pueden agregar nuevas columnas para incluir información
-                    adicional. Por último, con Alter Table Rename se puede cambiar el nombre de una tabla para reflejar
-                    cambios en la estructura o para cumplir con los requisitos de nomenclatura.
-                </p>
-            </p-scrollPanel>
+                <p class="Qbox">caja de preguntas</p>
+            </div>
         </div>
     </div>
 </div>

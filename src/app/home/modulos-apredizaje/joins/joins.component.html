@@ -69,30 +69,24 @@
                     </div>
                 </div>
             </div>
-            <p-scrollPanel [style]="{ width: '100%', height: '350px' }">
-                <div>
-                    <p>{{ data.titulo }}</p>
+            <div class="contenedor-7">
+                <p class="Rbox">la respuesta es : {{resComparar}}</p>
+                <p-button pRipple label="Comparar Arreglos" color="#BC66F7" styleClass="p-button-raised "
+                    (click)="compareArrays()">
+                </p-button>
+            </div>
+            <div class="span1">
+                <p>{{ data.titulo }}</p>
+            </div>
+            <div class="contenedor-8">
+                <div class="grid-item">
                     <p>{{ data.explicacion }}</p>
+                </div>
+                <div class="grid-item2">
                     <img alt="boton icon" class="img4" [src]="data.imagen" />
                 </div>
-                <p class="span1">
-                    En el contexto de las bases de datos relacionales, los joins se utilizan para combinar filas de dos
-                    o más tablas basándose en una condición de igualdad entre las columnas relacionadas. Los joins
-                    permiten consultar y obtener conjuntos de datos más completos y significativos al relacionar
-                    información de múltiples tablas en pocas palabras los joins nos permiten:
-                    </p>
-                <p class="span1">
-                    1. Combinar datos de tablas relacionadas: Los joins permiten unir filas de diferentes tablas para
-                    combinar información y obtener detalles completos de entidades relacionadas, como clientes y
-                    pedidos.</p>
-                <p class="span1">
-                    2. Recuperar datos relacionados: Los joins se utilizan para obtener información relacionada de
-                    diferentes tablas mediante el uso de claves primarias y claves foráneas que establecen la conexión
-                    entre ellas</p>
-                    <p class="span1 m-0">                    3. Combinar y filtrar datos: Los joins permiten combinar y filtrar datos en base a condiciones
-                    específicas, como igualdad, mayor que, menor que, etc., para obtener solo los resultados deseados.
-                </p>
-            </p-scrollPanel>
+                <p class="Qbox">caja de preguntas</p>
+            </div>
         </div>
     </div>
 </div>

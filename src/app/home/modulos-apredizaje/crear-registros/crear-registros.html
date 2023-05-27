@@ -6,13 +6,8 @@
     <div class="contenedor-4">
         <div class="contenedor-5">
             <div class="botones">
-                <p-button 
-                    pRipple label="Show Bd" 
-                    color="#BC66F7" 
-                    styleClass="p-button-raised " 
-                    icon="pi boton icon"
-                    iconPos="right"
-                    (click)="insertConsulta()">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right" (click)="insertConsulta()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/crear.png" />
                     </ng-template>
@@ -20,13 +15,8 @@
                 <p class="textI">Insert</p>
             </div>
             <div class="botones">
-                <p-button 
-                    pRipple label="Show Bd" 
-                    color="#BC66F7" 
-                    styleClass="p-button-raised " 
-                    icon="pi boton icon"
-                    iconPos="right"
-                    (click)="selectConsulta()">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right" (click)="selectConsulta()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
                     </ng-template>
@@ -34,13 +24,8 @@
                 <p class="textI">Select</p>
             </div>
             <div class="botones">
-                <p-button 
-                    pRipple label="Show Bd" 
-                    color="#BC66F7" 
-                    styleClass="p-button-raised " 
-                    icon="pi boton icon"
-                    iconPos="right"
-                    (click)="whereConsulta()">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right" (click)="whereConsulta()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/show.png" />
                     </ng-template>
@@ -48,13 +33,8 @@
                 <p class="textI">Where</p>
             </div>
             <div class="botones">
-                <p-button 
-                    pRipple label="Show Bd" 
-                    color="#BC66F7" 
-                    styleClass="p-button-raised " 
-                    icon="pi boton icon"
-                    iconPos="right"
-                    (click)="deleteConsulta()">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right" (click)="deleteConsulta()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
                     </ng-template>
@@ -86,36 +66,24 @@
                     </div>
                 </div>
             </div>
-            <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
-                <div>
-                    <p>{{ data.titulo }}</p>
+            <div class="contenedor-7">
+                <p class="Rbox">la respuesta es : {{resComparar}}</p>
+                <p-button pRipple label="Comparar Arreglos" color="#BC66F7" styleClass="p-button-raised "
+                    (click)="compareArrays()">
+                </p-button>
+            </div>
+            <div class="span1">
+                <p>{{ data.titulo }}</p>
+            </div>
+            <div class="contenedor-8">
+                <div class="grid-item">
                     <p>{{ data.explicacion }}</p>
+                </div>
+                <div class="grid-item2">
                     <img alt="boton icon" class="img4" [src]="data.imagen" />
                 </div>
-                <p class="span1">
-                    Insert Into: Es una sentencia SQL utilizada para insertar nuevos registros en una tabla. Permite
-                    especificar los valores a insertar para cada columna de la tabla.
-                </p>
-                <p class="span1">
-                    Select: Es una sentencia SQL utilizada para obtener registros de una tabla o conjunto de tablas.
-                    Permite especificar las columnas que se desean recuperar, las condiciones de filtrado y el orden de
-                    los resultados.
-                </p>
-                <p class="span1">
-                    Where: Es una cláusula utilizada en la sentencia SQL Select (y otras) para filtrar los registros que
-                    cumplen una determinada condición. Permite establecer condiciones lógicas y comparativas para
-                    restringir los resultados.
-                </p>
-                <p class="span1">
-                    Delete: Es una sentencia SQL utilizada para eliminar registros de una tabla. Permite especificar las
-                    condiciones que deben cumplir los registros a eliminar.
-                </p>
-
-                <p class="span1 m-0">
-                    Update: Es una sentencia SQL utilizada para actualizar los valores de uno o más registros en una
-                    tabla. Permite modificar los valores de las columnas existentes en función de ciertas condiciones.
-                </p>
-            </p-scrollPanel>
+                <p class="Qbox">caja de preguntas</p>
+            </div>
         </div>
     </div>
 </div>
