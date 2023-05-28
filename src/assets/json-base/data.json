@@ -2,15 +2,15 @@
   "create-database": {
     "titulo": "Create DataBase",
     "explicacion": "Aquí se crea la base de datos.",
-    "pregunta": "¿Cómo se crea la base de datos?",
-    "respuesta": "create database perritos ;",
+    "pregunta": "Crear una base de datos para un sistema de gestión de inventario.",
+    "respuesta": "create database nommbreDatabase ;",
     "imagen": "assets/img/crear.png"
   },
   "drop-databse": {
     "titulo": "Drop DataBase",
     "explicacion": "Aquí se elimina una base de datos existente.",
-    "pregunta": "¿Cómo eliminar una base de datos?",
-    "respuesta": "drop database databaseNombre;",
+    "pregunta": "Crear un ejercicio de eliminación de una base de datos, donde se borren todos los datos almacenados en ella.",
+    "respuesta": "drop database nommbreDatabase;",
     "imagen": "assets/img/borrar.png"
   },
   "show-databse": {

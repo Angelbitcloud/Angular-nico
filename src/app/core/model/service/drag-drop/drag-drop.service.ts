@@ -7,8 +7,8 @@ import { CdkDragDrop, CdkDropList, copyArrayItem, moveItemInArray, transferArray
 export class DragDropService {
   public drags: string[] = ['CREATE','SUM','AVG','COUNT','CONNECT', 'USER', 'DATABASE', 'WHERE', 'JOIN', 'NEW', 'SELECT',
     'FROM', 'INSERT', 'UPDATE', 'DELETE', 'ALTER', 'TABLE', 'COLUMN', 'DROP','ORDER BY','DESC', 'OR','NOT','AND',
-    'ADD', 'VALUES', 'INTO', '(', ')', 'GROUP', 'BY', 'HAVING', 'ORDER', 'ASC', ',','MAX','MIN',
-    'DESC', 'LIMIT', 'nombre_de_la_tabla',  'perritos', ';', ':', 'columna', 'tipo_de_dato', 'condiciones'];
+    'ADD', 'VALUES', 'INTO', '(', ')', 'GROUP', 'BY', 'HAVING', 'ORDER', 'ASC', ',','MAX','MIN', 'IF', 'EXISTS',
+    'DESC', 'LIMIT', 'nombre_de_la_tabla',  'nommbreDatabase', ';', ':', 'columna', 'tipo_de_dato', 'condiciones'];
   public drops: string[] = [];
 
   constructor() { }
