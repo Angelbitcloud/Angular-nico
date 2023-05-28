@@ -50,7 +50,7 @@
                     <h2 class="card-title">Ordene Aqui</h2>
                     <div class="boxContent" cdkDropList #ln2="cdkDropList" [cdkDropListData]="drops"
                         [cdkDropListConnectedTo]="[ln1]" (cdkDropListDropped)="dropItem($event)">
-                        <div cdkDrag class="block block-2" *ngFor="let n of drops">
+                        <div cdkDrag class="block2 block-2" *ngFor="let n of drops">
                             <span>{{n}}</span>
                         </div>
                     </div>

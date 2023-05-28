@@ -250,6 +250,16 @@ body {
     border: 1px solid #000;
 
 }
+/* modifica las cajas de texto de drop*/
+.block2 {
+    display: inline-block;
+    /* Ajusta el tamaño al contenido */
+    font-size: 18px;
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid #000;
+
+}
 
 .block-1 {
     background: #B99DE4;
@@ -291,7 +301,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    height: 500px;
+    height: 400px;
 }
 
 .Rbox {
@@ -303,17 +313,27 @@ body {
     height: 80px;
 }
 
+.Tbox {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    height: 550px;
+    width: 600px;
+}
+
 .grid-item:first-child {
     grid-row: span 2;
     /* El primer elemento ocupa dos filas */
 }
 
 .grid-item {
-    margin-top: 120px;
+    margin-top: 50px;
     background-color: #f2f2f2;
     padding: 10px;
     text-align: justify;
     line-height: 25px;
+    margin-left: -50px;
     /* Espacio interno de los elementos */
 }
 
@@ -323,6 +343,3 @@ body {
     justify-content: center;
 }
 
-.Rtext{
-    font-size: 60px;
-}
