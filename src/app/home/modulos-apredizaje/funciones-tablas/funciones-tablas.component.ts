@@ -70,11 +70,11 @@ export class FuncionesTablasComponent implements OnInit {
   }
 
   public selectConsulta(): void {
-    this.data = this.obtenerDataService.obtenerObjetoData('select-funciones');
+    this.data = this.obtenerDataService.obtenerObjetoData('operaciones-funciones');
   }
 
   public whereConsulta(): void {
-    this.data = this.obtenerDataService.obtenerObjetoData('where-funciones');
+    this.data = this.obtenerDataService.obtenerObjetoData('agrupamiento-funciones');
   }
   
 }
