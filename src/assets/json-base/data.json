@@ -1,63 +1,63 @@
 {
   "create-database": {
     "titulo": "Create DataBase",
-    "explicacion": "Aquí se crea la base de datos.",
+    "explicacion": "assets/img/CDB.png",
     "pregunta": "¿Cómo se crea la base de datos?",
     "respuesta": "create database perritos ;",
     "imagen": "assets/img/crear.png"
   },
   "drop-databse": {
     "titulo": "Drop DataBase",
-    "explicacion": "Aquí se elimina una base de datos existente.",
+    "explicacion": "assets/img/DDB.png",
     "pregunta": "¿Cómo eliminar una base de datos?",
     "respuesta": "drop database databaseNombre;",
     "imagen": "assets/img/borrar.png"
   },
   "show-databse": {
     "titulo": "Show DataBase",
-    "explicacion": "Aquí se muestra la lista de bases de datos existentes.",
+    "explicacion": "assets/img/SDB.png",
     "pregunta": "¿Cómo mostrar las bases de datos existentes?",
     "respuesta": "show databases;",
     "imagen": "assets/img/mostrar.png"
   },
   "create-table": {
     "titulo": "Create",
-    "explicacion": "Crear una tabla: La sentencia CREATE TABLE se utiliza para crear una nueva tabla en la base de datos. Especificas el nombre de la tabla y las columnas que contendrá, junto con sus tipos de datos. Puedes definir restricciones como claves primarias, claves foráneas, valores predeterminados, restricciones de integridad, etc.",
+    "explicacion": "assets/img/CT.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
   },
   "drop-table": {
     "titulo": "Drop",
-    "explicacion": "Eliminar una tabla: La sentencia DROP TABLE se utiliza para eliminar una tabla existente de la base de datos. Proporcionas el nombre de la tabla que deseas eliminar. Al eliminar una tabla, se eliminan todos los datos y la estructura asociada a ella. Esta operación es irreversible, por lo que se recomienda tener precaución al eliminar tablas.",
+    "explicacion": "assets/img/DT.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
   },
   "insert-consulta": {
     "titulo": "Insert",
-    "explicacion": "INSERT INTO : \n La sentencia INSERT INTO es una de las operaciones más utilizadas en SQL para añadir nuevos registros a una tabla en una base de datos. Es una parte fundamental del lenguaje de manipulación de datos (DML) y permite insertar datos en una tabla específica, especificando los valores que se desean almacenar en cada columna. Cuando se utiliza la sentencia INSERT INTO, se deben proporcionar dos elementos principales: el nombre de la tabla y los valores a insertar. El nombre de la tabla indica en qué tabla se insertarán los datos, mientras que los valores representan los datos que se desean agregar en cada columna de la tabla. Es importante mencionar que los valores deben estar en el mismo orden que las columnas de la tabla. Esto significa que el primer valor se insertará en la primera columna, el segundo valor en la segunda columna, y así sucesivamente. Si no se proporciona un valor para una columna específica, se asumirá un valor nulo o se utilizará el valor predeterminado definido para esa columna. Además, la sentencia INSERT INTO permite insertar múltiples registros en una sola operación. Esto se logra al especificar conjuntos de valores separados por comas dentro de los paréntesis. Cada conjunto de valores representa un registro diferente que se insertará en la tabla. Esta capacidad de insertar múltiples registros en una sola sentencia es muy útil para mejorar la eficiencia y reducir la carga en la base de datos.",
+    "explicacion": "assets/img/RI.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
   },
   "select-consulta": {
     "titulo": "Select",
-    "explicacion": "La sentencia SELECT es una de las operaciones más utilizadas en SQL y tiene como objetivo recuperar datos de una o varias tablas en una base de datos. Esta sentencia permite realizar consultas a la base de datos y obtener conjuntos de datos específicos que cumplan ciertos criterios.\n La estructura básica de la sentencia SELECT consta de las siguientes cláusulas:\nSELECT: Es la cláusula principal y se utiliza para indicar qué columnas o expresiones se desean seleccionar de la tabla. Se puede especificar el nombre de las columnas individuales separadas por comas o utilizar asteriscos (*) para seleccionar todas las columnas de la tabla.\n FROM: Es la cláusula que especifica la tabla o tablas de las cuales se desea recuperar los datos. Se pueden incluir varias tablas utilizando la cláusula JOIN para combinar datos de diferentes tablas relacionadas.\nWHERE: Es una cláusula opcional que se utiliza para filtrar los registros basados en una condición específica. Permite especificar una o varias condiciones lógicas utilizando operadores como igual (=), mayor que (>), menor que (<), etc.",
+    "explicacion": "assets/img/RS.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
   },
   "where-consulta": {
     "titulo": "Where",
-    "explicacion": "La cláusula WHERE en SQL se utiliza para filtrar las filas de una tabla según una condición específica. Permite seleccionar solo aquellos registros que cumplan con ciertos criterios establecidos. Puedes utilizar operadores de comparación como igualdad, desigualdad, mayor que, menor que, mayor o igual que, menor o igual que, entre otros, para construir la condición. También puedes combinar múltiples condiciones usando operadores lógicos como AND y OR. La cláusula WHERE es útil para obtener resultados más precisos y relevantes en tus consultas. La condición en la cláusula WHERE es una expresión lógica que se evalúa para cada fila de la tabla. Puedes utilizar operadores de comparación como igualdad (=), desigualdad (!= o <>), mayor que (>), menor que (<), mayor o igual que (>=), menor o igual que (<=), entre otros, para construir la condición. La cláusula WHERE también se puede utilizar en combinación con otras cláusulas como ORDER BY para ordenar los resultados, GROUP BY para agrupar los registros, o JOIN para combinar datos de múltiples tablas. En resumen, la cláusula WHERE en SQL te permite realizar consultas más específicas al establecer condiciones que deben cumplir los registros seleccionados. Esto te ayuda a obtener conjuntos de datos más relevantes y útiles para tus necesidades de análisis y manipulación de datos. Además de la cláusula WHERE, puedes combinar la sentencia DELETE con otras cláusulas para refinar aún más tus operaciones de eliminación. Por ejemplo, la cláusula ORDER BY te permite especificar el orden en el que se deben eliminar los registros, mientras que la cláusula LIMIT te permite limitar la cantidad de registros eliminados en una sola ejecución. Es fundamental tener precaución al utilizar la sentencia DELETE, ya que los registros eliminados no se pueden recuperar fácilmente. Antes de ejecutarla, asegúrate de verificar tus condiciones y estar completamente seguro de los registros que serán afectados.",
+    "explicacion": "assets/img/RW.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
   },
   "delete-consulta": {
     "titulo": "Delete",
-    "explicacion": "La sentencia DELETE en SQL es una poderosa herramienta que te permite eliminar registros de una tabla en una base de datos. Cuando necesitas eliminar datos de manera permanente y precisa, la sentencia DELETE es tu aliada.La sintaxis básica de la sentencia DELETE consta de dos partes principales: la cláusula DELETE FROM y la cláusula WHERE. La cláusula DELETE FROM indica la tabla de la cual deseas eliminar registros, mientras que la cláusula WHERE establece las condiciones que deben cumplir los registros que serán eliminados.Al utilizar la sentencia DELETE, tienes el control total sobre qué registros se eliminarán. Puedes especificar condiciones complejas utilizando operadores lógicos y comparativos, lo que te permite eliminar registros basados en múltiples criterios.",
+    "explicacion": "assets/img/RD.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
@@ -169,10 +169,10 @@
   },
   "udate-delete": {
     "titulo": "Update-Delete",
-    "explicacion": "Las subconsultas de actualización y eliminación se refieren a la utilización de una subconsulta en la cláusula WHERE de las sentencias UPDATE y DELETE. La subconsulta se utiliza para obtener los resultados que se utilizarán como criterio para la actualización o eliminación.Por ejemplo, en una subconsulta de actualización, se puede realizar una consulta secundaria para obtener ciertos registros y luego utilizar los resultados para modificar los valores de una columna en la tabla principal. De manera similar, en una subconsulta de eliminación, se puede realizar una consulta secundaria para obtener ciertos registros y luego utilizar los resultados para eliminar esos registros de la tabla principal.El uso de subconsultas en las sentencias UPDATE y DELETE brinda flexibilidad y permite realizar modificaciones o eliminaciones basadas en condiciones más complejas y resultados obtenidos de otras consultas.",
+    "explicacion": "assets/img/update.png",
     "pregunta": "",
     "respuesta": "",
-    "imagen": ""
+    "imagen": "assets/img/crear.png"
   },
   "exist-not-exist": {
     "titulo": "Exists’ Not Exists",
