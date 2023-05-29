@@ -49,6 +49,7 @@ export class DragDropService {
     'MIN',
     'NEW',
     'SUM',
+    '*',
     '(',
     ')',
     ',',
