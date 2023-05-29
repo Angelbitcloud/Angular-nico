@@ -50,7 +50,7 @@ body {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(min(100%, 100px), 1fr));
     grid-gap: 10px;
-    margin-top: -700px;
+    margin-top: -800px;
 }
 
 .contenedor-6 {

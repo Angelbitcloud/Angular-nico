@@ -1,39 +1,10 @@
 <div class="boxTopTitle">
-    <p class="title">LLaves Primarias y Foraneas</p>
+    <p class="title">Creacion de Subconsultas</p>
 </div>
 
 <div class="boxTop2">
     <div class="contenedor-4">
         <div class="contenedor-5">
-            <div class="botones">
-                <p-button 
-                    pRipple label="Show Bd" 
-                    color="#BC66F7" 
-                    styleClass="p-button-raised " 
-                    icon="pi boton icon"
-                    iconPos="right"
-                    (click)="primaryKeyConsulta()">
-                    <ng-template pTemplate="botonicon">
-                        <img alt="boton icon" class="img4" src="assets/img/crear.png" />
-                    </ng-template>
-                </p-button>
-                <p class="textI"> Primary Key </p>
-            </div>
-            <div class="botones">
-                <p-button 
-                    pRipple label="Show Bd" 
-                    color="#BC66F7" 
-                    styleClass="p-button-raised " 
-                    icon="pi boton icon"
-                    iconPos="right"
-                    (click)="foreignKeyConsulta()">
-                    <ng-template pTemplate="botonicon">
-                        <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
-                    </ng-template>
-                </p-button>
-                <p class="textI">Foreign Key</p>
-            </div>
-        
         </div>
         <div class="contenedor-6">
             <div class="boxdrag row">
@@ -62,13 +33,7 @@
                     (click)="compareArrays()">
                 </p-button>
             </div>
-            <div class="title">
-                <p>{{ data.titulo }}</p>
-            </div>
             <div class="contenedor-8">
-                <div class="grid-item">
-                    <img alt="boton icon" class="Tbox" style="width: 650px; height: 550px;"  [src]="data.explicacion" />
-                </div>
                 <div class="grid-item2">
                     <img alt="boton icon" class="img4" [src]="data.imagen" />
                 </div>

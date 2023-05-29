@@ -7,11 +7,11 @@ import { Tips } from 'src/app/core/model/interfaces/tips.interface';
 
 
 @Component({
-  selector: 'app-funciones-tablas',
-  templateUrl: './funciones-tablas.component.html',
-  styleUrls: ['./funciones-tablas.component.css']
+  selector: 'app-pruebas',
+  templateUrl: './pruebas.component.html',
+  styleUrls: ['./pruebas.component.css']
 })
-export class FuncionesTablasComponent implements OnInit {
+export class PruebasComponent {
 
   data: DataExplicacion;
   tips: Tips;
@@ -42,7 +42,6 @@ export class FuncionesTablasComponent implements OnInit {
 
   ngOnInit(): void {
     this.limpiarDrops();
-    this.orderConsulta();
   }
 
   compareArrays(): void {
@@ -64,17 +63,4 @@ export class FuncionesTablasComponent implements OnInit {
   public dropItem($event) {
     this.dragDropService.drop($event);
   }
-
-  public orderConsulta(): void {
-    this.data = this.obtenerDataService.obtenerObjetoData('order-consulta');
-  }
-
-  public selectConsulta(): void {
-    this.data = this.obtenerDataService.obtenerObjetoData('operaciones-funciones');
-  }
-
-  public whereConsulta(): void {
-    this.data = this.obtenerDataService.obtenerObjetoData('agrupamiento-funciones');
-  }
-  
 }
