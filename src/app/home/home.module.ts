@@ -15,6 +15,7 @@ import { AlterTablasComponent } from './modulos-apredizaje/alter-tablas/alter-ta
 import { JoinsComponent } from './modulos-apredizaje/joins/joins.component';
 import { SubconsultasComponent } from './modulos-apredizaje/subconsultas/subconsultas.component';
 import { SharedModule } from '../shared/shared.module';
+import { PruebasComponent } from './modulos-apredizaje/pruebas/pruebas.component';
 
 
 
@@ -31,7 +32,8 @@ import { SharedModule } from '../shared/shared.module';
     FuncionesTablasComponent,
     AlterTablasComponent,
     JoinsComponent,
-    SubconsultasComponent
+    SubconsultasComponent,
+    PruebasComponent
   ],
   imports: [
     CommonModule,

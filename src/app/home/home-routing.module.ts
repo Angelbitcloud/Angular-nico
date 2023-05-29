@@ -12,6 +12,7 @@ import { FuncionesTablasComponent } from './modulos-apredizaje/funciones-tablas/
 import { AlterTablasComponent } from './modulos-apredizaje/alter-tablas/alter-tablas.component';
 import { JoinsComponent } from './modulos-apredizaje/joins/joins.component';
 import { SubconsultasComponent } from './modulos-apredizaje/subconsultas/subconsultas.component';
+import { PruebasComponent } from './modulos-apredizaje/pruebas/pruebas.component';
 
 const routes: Routes = [
   {
@@ -60,6 +61,10 @@ const routes: Routes = [
       {
         path: 'crear-tabla', 
         component: CrearTablaComponent,
+      },
+      {
+        path: 'pruebas', 
+        component: PruebasComponent,
       },
       {
         path: '**',

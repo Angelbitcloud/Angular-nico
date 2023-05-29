@@ -65,6 +65,11 @@ export class MenuComponent {
                         icon: 'pi pi-fw pi-database',
                         routerLink: '/home/subconsultas'
                     },
+                    {
+                        label: 'Pruebas',
+                        icon: 'pi pi-fw pi-database',
+                        routerLink: '/home/pruebas'
+                    },
                 ]
             },
         ];

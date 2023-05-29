@@ -127,42 +127,42 @@
   },
   "alter-table-drop": {
     "titulo": "Alter Table Drop",
-    "explicacion": "La instrucción ALTER TABLE DROP es utilizada en bases de datos para eliminar una columna existente de una tabla. Esta operación permite eliminar de forma permanente una columna específica junto con todos los datos y metadatos asociados a ella.Para utilizar la instrucción ALTER TABLE DROP, se deben especificar dos elementos principales: el nombre de la tabla y el nombre de la columna que se desea eliminar.Donde nombre_tabla es el nombre de la tabla de la cual se quiere eliminar la columna, y nombre_columna es el nombre de la columna que se desea eliminar.Es importante tener en cuenta que al ejecutar la instrucción ALTER TABLE DROP, se eliminarán permanentemente todos los datos contenidos en la columna especificada, así como cualquier restricción o índice asociado a dicha columna. Por lo tanto, se debe tener precaución al utilizar esta instrucción, ya que puede afectar la integridad y la estructura de la tabla.En resumen, la instrucción ALTER TABLE DROP es utilizada para eliminar de manera permanente una columna existente en una tabla de la base de datos. Esto permite realizar modificaciones en la estructura de la tabla y eliminar datos no deseados o innecesarios. Sin embargo, se debe tener cuidado al utilizar esta instrucción para evitar la pérdida de información importante y garantizar la integridad de los datos.",
+    "explicacion": "assets/img/ATD.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
   },
   "alter-table-add": {
     "titulo": "Alter Table Add",
-    "explicacion": "La instrucción ALTER TABLE ADD se utiliza en bases de datos para agregar una nueva columna a una tabla existente. Esta operación permite definir el nombre de la columna, el tipo de datos, la longitud (si corresponde) y otras características de la columna.Para utilizar la instrucción ALTER TABLE ADD, se deben especificar tres elementos principales: el nombre de la tabla, el nombre de la columna que se desea agregar y los detalles de la columna.Donde nombre_tabla es el nombre de la tabla a la cual se desea agregar la columna, nombre_columna es el nombre que se le dará a la nueva columna y tipo_datos es el tipo de datos que se asignará a la columna.Además del tipo de datos, se pueden especificar otras características opcionales para la nueva columna, como la longitud (en caso de tipos de datos que la requieran), restricciones, valores predeterminados, entre otros.En resumen, la instrucción ALTER TABLE ADD es utilizada para agregar una nueva columna a una tabla existente en una base de datos. Esto permite ampliar la estructura de la tabla y definir características específicas para la nueva columna. Es importante tener en cuenta la sintaxis y las opciones específicas del sistema de gestión de bases de datos utilizado para asegurarse de utilizar correctamente esta instrucción y mantener la integridad de los datos.",
+    "explicacion": "assets/img/ATA.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
   },
   "alter-table-rename": {
     "titulo": "Alter Table Rename",
-    "explicacion": "La instrucción ALTER TABLE RENAME se utiliza en bases de datos para cambiar el nombre de una tabla existente. Esta operación permite cambiar el nombre de la tabla, y opcionalmente, también el nombre de su esquema o base de datos.Para utilizar la instrucción ALTER TABLE RENAME, se deben especificar dos elementos principales: el nombre actual de la tabla y el nuevo nombre que se desea asignar.Donde nombre_tabla es el nombre actual de la tabla y nuevo_nombre es el nuevo nombre que se desea asignar.Es importante tener en cuenta que al utilizar la instrucción ALTER TABLE RENAME, se cambiará el nombre de la tabla en la base de datos, y cualquier referencia a la tabla con el nombre anterior ya no será válida. Si la tabla se encuentra en un esquema específico o base de datos, se mantendrá en el mismo esquema o base de datos después de cambiar su nombre.En resumen, la instrucción ALTER TABLE RENAME se utiliza para cambiar el nombre de una tabla existente en una base de datos. Esto permite actualizar el nombre de la tabla de acuerdo a las necesidades del sistema y mantener una mejor organización de los objetos de la base de datos. Es importante tener en cuenta la sintaxis y las opciones específicas del sistema de gestión de bases de datos utilizado para asegurarse de utilizar correctamente esta instrucción y evitar problemas con las referencias a la tabla.",
+    "explicacion": "assets/img/ATR.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
   },
   "inner-join": {
     "titulo": "Inner Join",
-    "explicacion": "El INNER JOIN es una operación de unión utilizada en bases de datos relacionales para combinar registros de dos o más tablas en función de una condición de coincidencia. La operación INNER JOIN devuelve únicamente los registros que tienen coincidencias en ambas tablas involucradas en la unión, es decir, solo los registros que satisfacen la condición de unión establecida.En esta sintaxis, tabla1 y tabla2 son los nombres de las tablas que se desean unir, y columna es el nombre de la columna común en ambas tablas que se utilizará como criterio de unión. La condición de unión se establece mediante la cláusula ON, donde se especifica la igualdad entre las columnas que se utilizarán para comparar los registros.Cuando se ejecuta un INNER JOIN, se comparan los valores de la columna especificada en ambas tablas. Si los valores son iguales, los registros se combinan en el resultado final. Solo los registros que tienen coincidencias en ambas tablas se incluirán en el resultado.En resumen, el INNER JOIN es una operación de unión en bases de datos relacionales que combina registros de dos o más tablas en función de una condición de coincidencia. Solo los registros que tienen coincidencias en ambas tablas se incluyen en el resultado. Esta operación es útil cuando se desea combinar información relacionada de diferentes tablas en una consulta.",
+    "explicacion":  "assets/img/INJ.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
   },
   "right-join": {
     "titulo": "Right Join",
-    "explicacion": "El RIGHT JOIN es una operación de unión utilizada en bases de datos relacionales para combinar registros de dos tablas en función de una condición de coincidencia, devolviendo todos los registros de la tabla de la derecha (tabla del lado derecho) y solo los registros correspondientes de la tabla de la izquierda (tabla del lado izquierdo).En esta sintaxis, tabla1 es la tabla del lado izquierdo y tabla2 es la tabla del lado derecho que se desean unir. La condición de unión se establece mediante la cláusula ON, donde se especifica la igualdad entre las columnas que se utilizarán para comparar los registros.Cuando se ejecuta un RIGHT JOIN, se comparan los valores de la columna especificada en ambas tablas. Si los valores son iguales, los registros se combinan en el resultado final. Sin embargo, a diferencia del INNER JOIN, el RIGHT JOIN garantiza que todos los registros de la tabla de la derecha se incluyan en el resultado, incluso si no tienen coincidencias en la tabla de la izquierda. Si no hay coincidencias, se mostrarán valores NULL en las columnas de la tabla de la izquierda.El RIGHT JOIN se utiliza cuando se desea obtener todos los registros de la tabla de la derecha y solo los registros correspondientes de la tabla de la izquierda. Esto puede ser útil en situaciones donde la tabla de la derecha es la principal y se desea asegurar que todos sus registros estén presentes en el resultado, incluso si no hay coincidencias en la tabla de la izquierda.",
+    "explicacion":  "assets/img/RJ.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
   },
   "left-join": {
     "titulo": "Left Join",
-    "explicacion": "El LEFT JOIN es una operación de unión utilizada en bases de datos relacionales para combinar registros de dos tablas en función de una condición de coincidencia, devolviendo todos los registros de la tabla de la izquierda (tabla del lado izquierdo) y solo los registros correspondientes de la tabla de la derecha (tabla del lado derecho).En esta sintaxis, tabla1 es la tabla del lado izquierdo y tabla2 es la tabla del lado derecho que se desean unir. La condición de unión se establece mediante la cláusula ON, donde se especifica la igualdad entre las columnas que se utilizarán para comparar los registros.Al ejecutar un LEFT JOIN, se comparan los valores de la columna especificada en ambas tablas. Si los valores son iguales, los registros se combinan en el resultado final. La diferencia principal con el RIGHT JOIN es que el LEFT JOIN garantiza que todos los registros de la tabla de la izquierda estén presentes en el resultado, incluso si no tienen coincidencias en la tabla de la derecha. Si no hay coincidencias, se mostrarán valores NULL en las columnas de la tabla de la derecha.  El LEFT JOIN se utiliza cuando se desea obtener todos los registros de la tabla de la izquierda y solo los registros correspondientes de la tabla de la derecha. Esto puede ser útil en situaciones donde la tabla de la izquierda es la principal y se desea asegurar que todos sus registros estén presentes en el resultado, incluso si no hay coincidencias en la tabla de la derecha.Es importante tener en cuenta que la posición de las tablas en la cláusula LEFT JOIN es significativa. La tabla del lado izquierdo se considera la tabla principal, cuyos registros se mantienen todos en el resultado, mientras que los registros de la tabla del lado derecho solo se incluyen si coinciden con la condición de unión.",
+    "explicacion":  "assets/img/LJ.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
@@ -176,14 +176,14 @@
   },
   "exist-not-exist": {
     "titulo": "Exists’ Not Exists",
-    "explicacion": "Las subconsultas EXISTS y NOT EXISTS son utilizadas en bases de datos para verificar la existencia de registros en una tabla basándose en los resultados de una subconsulta. La subconsulta EXISTS se utiliza para comprobar si existe al menos un registro en una tabla que cumple ciertas condiciones especificadas en la subconsulta. Si la subconsulta devuelve algún resultado, la condición se considera verdadera y se ejecuta la acción correspondiente.En esta sintaxis, columna(s) representa las columnas que se desean seleccionar en la subconsulta. tabla es la tabla sobre la cual se realiza la consulta. La subconsulta se especifica dentro de la cláusula EXISTS, y puede contener cualquier consulta válida que devuelva un resultado.Por otro lado, la subconsulta NOT EXISTS se utiliza para comprobar si no existe ningún registro en una tabla que cumpla ciertas condiciones especificadas en la subconsulta. Si la subconsulta no devuelve ningún resultado, la condición se considera verdadera y se ejecuta la acción correspondiente.",
+    "explicacion": "assets/img/ETE.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
   },
   "any-some-all": {
     "titulo": "Any-Some-All",
-    "explicacion": "as subconsultas ANY, SOME y ALL se utilizan en bases de datos para comparar un valor con un conjunto de valores devueltos por una subconsulta.La subconsulta ANY se utiliza para verificar si un valor coincide con al menos uno de los valores devueltos por la subconsulta. Es similar al uso del operador de comparación IN, pero en lugar de proporcionar una lista de valores explícitos, se utiliza una subconsulta para obtener los valores a comparar.En esta sintaxis, valor es el valor que se desea comparar y comparación puede ser cualquier operador de comparación válido, como =, <, >, etc. La subconsulta debe devolver un conjunto de valores con los cuales se realizará la comparación.La subconsulta SOME se utiliza de manera similar a ANY. También se utiliza para comparar un valor con un conjunto de valores devueltos por una subconsulta, y devuelve verdadero si el valor coincide con al menos uno de los valores de la subconsulta Por último, la subconsulta ALL se utiliza para verificar si un valor coincide con todos los valores devueltos por la subconsulta. Devolverá verdadero si el valor se encuentra en todos los valores de la subconsulta.",
+    "explicacion": "assets/img/ASA.png",
     "pregunta": "",
     "respuesta": "",
     "imagen": ""
