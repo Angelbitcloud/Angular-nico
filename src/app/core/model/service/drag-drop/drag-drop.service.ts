@@ -6,8 +6,7 @@ import { CdkDragDrop, CdkDropList, copyArrayItem, moveItemInArray, transferArray
 })
 export class DragDropService {
   public drags: string[] = [
-    'IF', 
-    'EXISTS',
+  
     'CREATE',
     'DATABASE',
     'TABLE',
@@ -26,6 +25,8 @@ export class DragDropService {
     'OR',
     'ASC',
     'AVG',
+    'IF', 
+    'EXISTS',
     'BY',
     'COLUMN',
     'CONNECT',
@@ -41,6 +42,7 @@ export class DragDropService {
     'INSERT',
     'INTO',
     'JOIN',
+    'DATE',
     'INNER JOIN',
     'LEFT JOIN',
     'RIGHT JOIN',
@@ -51,6 +53,7 @@ export class DragDropService {
     'SUM',
     'INT',
     'VARCHAR',
+    'REFERENCES',
     '*',
     '(',
     ')',
@@ -63,17 +66,28 @@ export class DragDropService {
     '<',
     'nombreDatabase',
     'nombreTabla',
+    'nombreTabla2',
     'columna',
+    'Tabla1ID',
+    'Tabla2ID',
+    'valor',
+    'precio',
+    'puntuacion',
+    'fechaNacimiento',
     'ID',
     'edad',
     'nombre',
     'apellido',
     'Jhon',
     'Doe',
+    '1',
+    '2',
+    '5',
+    '10',
     '30',
     '50',
     '100',
-    '1',
+    
 ];
 
   public drops: string[] = [];

@@ -65,43 +65,43 @@
   "primary-key-consulta": {
     "titulo": "Primary Key ",
     "explicacion": "assets/img/PK.png",
-    "pregunta": "",
-    "respuesta": "",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que cree una tabla con una llave primaria (PK) definida. Utiliza la sentencia CREATE TABLE seguida del nombre de la tabla y los nombres de las columnas con sus respectivos tipos de datos donde el orden seran id ,edad,nombre,apellido los dos primeros seran un INT y los dos siguientes como caracteres de tamaño 50. A continuación, agrega la especificación de la llave primaria utilizando la cláusula PRIMARY KEY. Recuerda que la llave primaria es un identificador único para cada registro en la tabla y se utiliza para garantizar la integridad y la unicidad de los datos. Asegúrate de elegir una columna adecuada como llave primaria en función de los requisitos de tu aplicación",
+    "respuesta": "CREATE TABLE nombretabla (id INT PRIMARY KEY , edad INT , nombre VARCHAR ( 50 ) , apellido VARCHAR ( 50 ) ) ;",
     "imagen": ""
   },
   "foreign-key-consulta": {
     "titulo": "Foreign Key",
     "explicacion": "assets/img/FK.png",
-    "pregunta": "",
-    "respuesta": "",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que cree una tabla con una llave foránea (FK) definida. Utiliza la sentencia CREATE TABLE seguida del nombre de la tabla y los nombres de las columnas con sus respectivos tipos de datos. A continuación, agrega la especificación de la llave foránea utilizando la cláusula FOREIGN KEY.Debes crear dos tablas: nombreTabla y nombreTabla2. En nombreTabla, define la columna Tabla1ID como INT y llave primaria, y la columna nombre como VARCHAR(50). En nombreTabla2, define Tabla2ID como INT y llave primaria, edad como INT, y agrega una llave foránea Tabla1ID que hace referencia a nombreTabla.",
+    "respuesta": "CREATE TABLE nombreTabla ( Tabla1ID INT PRIMARY KEY , nombre VARCHAR ( 50 ) ) ;  CREATE TABLE nombreTabla2 ( Tabla2ID INT PRIMARY KEY , edad INT , Tabla1ID  INT ,  FOREIGN KEY ( Tabla1ID ) REFERENCES nombreTaba ( Tabla1ID ) ) ;",
     "imagen": ""
   },
   "entero-dato": {
     "titulo": "Enteros",
     "explicacion": "assets/img/DTINT.png",
-    "pregunta": "",
-    "respuesta": "",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que cree una tabla con dos columnas una de id y otra de edad . Utiliza la sentencia CREATE TABLE seguida del nombre de la tabla y los nombres de las columnas con sus respectivos tipos de datos. ",
+    "respuesta": "CREATE TABLE nombreTabla ( id INT , edad INT ) ;",
     "imagen": ""
   },
   "decimal-dato": {
     "titulo": "Decimal",
     "explicacion": "assets/img/DTD.png",
-    "pregunta": "",
-    "respuesta": "",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que cree una tabla con dos columnas: una columna de precio de tipo decimal donde almacenaras números decimales con una precisión de hasta 10 dígitos en total y 2 dígitos después del punto decimal. y otra columna de puntuacion de tipo float. Utiliza la sentencia CREATE TABLE seguida del nombre de la tabla y los nombres de las columnas con sus respectivos tipos de datos.",
+    "respuesta": "CREATE TABLE nombreTabla ( precio DECIMAL ( 10 , 2 ) , puntuacion FLOAT ) ;",
     "imagen": ""
   },
   "cadenas-dato": {
     "titulo": "Cadenas",
     "explicacion": "assets/img/DTS.png",
-    "pregunta": "",
-    "respuesta": "",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que cree una tabla con dos columnas, una para el nombre y otra para el apellido, ambas de tipo string con un tamaño de 50. Utiliza la sentencia CREATE TABLE seguida del nombre de la tabla y los nombres de las columnas con sus respectivos tipos de datos.",
+    "respuesta": "CREATE TABLE nombreTabla ( nombre VARCHAR ( 50 ) , apellido VARCHAR ( 50 ) ) ;",
     "imagen": ""
   },
   "fecha-dato": {
     "titulo": "Fecha",
     "explicacion": "assets/img/DTF.png",
-    "pregunta": "",
-    "respuesta": "",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que cree una tabla con una columna de tipo date cuya variable sea fechaNacimieento. Utiliza la sentencia CREATE TABLE seguida del nombre de la tabla y el nombre de la columna con su respectivo tipo de dato.",
+    "respuesta": "CREATE TABLE nombreTabla ( fechaNacimiento DATE ) ;",
     "imagen": ""
   },
   "order-consulta": {

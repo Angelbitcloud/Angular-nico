@@ -36,14 +36,14 @@ export class MenuComponent {
                         routerLink: '/home/crear-registros'
                     },
                     {
-                        label: 'Keys',
-                        icon: 'pi pi-fw pi-database',
-                        routerLink: '/home/keys'
-                    },
-                    {
                         label: 'Manejo De Tipos De Datos',
                         icon: 'pi pi-fw pi-database',
                         routerLink: '/home/tipos-datos'
+                    },
+                    {
+                        label: 'Keys',
+                        icon: 'pi pi-fw pi-database',
+                        routerLink: '/home/keys'
                     },
                     {
                         label: 'Funciones En Las Tablas',
