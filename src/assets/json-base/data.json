@@ -21,24 +21,24 @@
     "imagen": "assets/img/mostrar.png"
   },
   "create-table": {
-    "titulo": "Create",
+    "titulo": "Create Table",
     "explicacion": "assets/img/CT.png",
-    "pregunta": "",
-    "respuesta": "",
+    "pregunta": "Crear una consulta sql que cree una tabla, con los datos en el siguiente orden: id int , edad int , nombre varchar , apellido varchar ",
+    "respuesta": "crete table nombreTabla ( ID int , edad int , nombre varchar , apellido varchar ) ;",
     "imagen": ""
   },
   "drop-table": {
     "titulo": "Drop",
     "explicacion": "assets/img/DT.png",
-    "pregunta": "",
-    "respuesta": "",
+    "pregunta": "Crear una consulta sql que elimine una tabla",
+    "respuesta": "drop table nombreTabla ;",
     "imagen": ""
   },
   "insert-consulta": {
     "titulo": "Insert",
     "explicacion": "assets/img/RI.png",
-    "pregunta": "",
-    "respuesta": "",
+    "pregunta": "Crear una consulta sql que inserte en una tabla un registro",
+    "respuesta": "crete table ( ID tipoDato , edad tipoDato , nombre tipoDato , apellido tipoDato ) ;",
     "imagen": ""
   },
   "select-consulta": {
