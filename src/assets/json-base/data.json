@@ -2,64 +2,64 @@
   "create-database": {
     "titulo": "Create DataBase",
     "explicacion": "assets/img/CDB.png",
-    "pregunta": "Crear una consulta sql que cree una base de datos.",
-    "respuesta": "create database nommbreDatabase ;",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar la consulta para crear una base de datos utilizando el lenguaje SQL. Utiliza la sentencia CREATE DATABASE seguida del nombre que deseas asignarle a tu nueva base de datos. Recuerda ejecutar esta consulta en el contexto adecuado de tu sistema de gestión de bases de datos para lograr la creación exitosa de tu base de datos. ¡Demuestra tus habilidades y crea tu propio espacio de almacenamiento de datos!",
+    "respuesta": "create database nombreDatabase ;",
     "imagen": "assets/img/crear.png"
   },
   "drop-databse": {
     "titulo": "Drop DataBase",
     "explicacion": "assets/img/DDB.png",
-    "pregunta": "Crear una consulta sql de eliminación de una base de datos.",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar la consulta para crear una base de datos utilizando el lenguaje SQL. Utiliza la sentencia CREATE DATABASE seguida del nombre que deseas asignarle a tu nueva base de datos. Recuerda ejecutar esta consulta en el contexto adecuado de tu sistema de gestión de bases de datos para lograr la creación exitosa de tu base de datos. ¡Demuestra tus habilidades y crea tu propio espacio de almacenamiento de datos!",
     "respuesta": "drop database nommbreDatabase ;",
     "imagen": "assets/img/borrar.png"
   },
   "show-databse": {
     "titulo": "Show DataBase",
     "explicacion": "assets/img/SDB.png",
-    "pregunta": "Crear una consulta sql que muestre una database",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar la consulta para mostrar una base de datos utilizando el lenguaje SQL. Utiliza la sentencia SHOW DATABASES para obtener la lista de todas las bases de datos disponibles en tu sistema de gestión de bases de datos. Recuerda ejecutar esta consulta en el contexto adecuado de tu sistema para visualizar correctamente las bases de datos existentes. ¡Demuestra tus habilidades y descubre todas las bases de datos disponibles en tu entorno!",
     "respuesta": "show databases ;",
     "imagen": "assets/img/mostrar.png"
   },
   "create-table": {
     "titulo": "Create Table",
     "explicacion": "assets/img/CT.png",
-    "pregunta": "Crear una consulta sql que cree una tabla, con los datos en el siguiente orden: id int , edad int , nombre varchar , apellido varchar ",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL para crear una tabla con los siguientes campos: id (entero), edad (entero), nombre (cadena de caracteres) y apellido (cadena de caracteres). Utiliza la sentencia CREATE TABLE seguida del nombre que deseas asignarle a tu tabla y los nombres y tipos de datos de cada columna en el orden mencionado anteriormente. Asegúrate de utilizar los tipos de datos adecuados para cada columna. ¡Demuestra tus habilidades y crea una tabla con los campos id, edad, nombre y apellido para almacenar la información que necesites! ",
     "respuesta": "crete table nombreTabla ( ID int , edad int , nombre varchar , apellido varchar ) ;",
     "imagen": ""
   },
   "drop-table": {
     "titulo": "Drop",
     "explicacion": "assets/img/DT.png",
-    "pregunta": "Crear una consulta sql que elimine una tabla",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar la consulta para eliminar una tabla utilizando el lenguaje SQL. Utiliza la sentencia DROP TABLE seguida del nombre de la tabla que deseas borrar. Recuerda ejecutar esta consulta en el contexto adecuado de tu sistema de gestión de bases de datos para lograr la eliminación exitosa de la tabla. ¡Demuestra tus habilidades y elimina la tabla que ya no necesitas!",
     "respuesta": "drop table nombreTabla ;",
     "imagen": ""
   },
   "insert-consulta": {
     "titulo": "Insert",
     "explicacion": "assets/img/RI.png",
-    "pregunta": "Crear una consulta sql que inserte en una tabla un registro",
-    "respuesta": "crete table ( ID tipoDato , edad tipoDato , nombre tipoDato , apellido tipoDato ) ;",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que inserte un registro en una tabla. utiliza la sentencia INSERT INTO seguida del nombre de la tabla y los valores que deseas insertar en el orden correspondiente ten en cuenta usa el numero 1 como id  y su edad sera 30.",
+    "respuesta": "INSERT INTO nombretabla ( ID , edad , nombre , apellido ) VALUES ( 1 , 30 , Jhon , Doe ) ;",
     "imagen": ""
   },
   "select-consulta": {
     "titulo": "Select",
     "explicacion": "assets/img/RS.png",
-    "pregunta": "",
-    "respuesta": "",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que realice una selección de datos en una tabla. Utiliza la sentencia SELECT seguida de los nombres de las columnas que deseas seleccionar: id, edad, nombre y apellido.",
+    "respuesta": "SELECT id , edad , nombre , apellido FROM nombretabla ;",
     "imagen": ""
   },
   "where-consulta": {
     "titulo": "Where",
     "explicacion": "assets/img/RW.png",
-    "pregunta": "",
-    "respuesta": "",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que realice una selección de datos en una tabla. Utiliza la sentencia SELECT seguida de los nombres de las columnas que deseas seleccionar: id, edad, nombre y apellido. Ten en cuenta que se utiliza la cláusula WHERE para filtrar los resultados y seleccionar solamente el registro con el id igual a 1. Si deseas seleccionar todos los registros, puedes omitir la cláusula WHERE.",
+    "respuesta": "SELECT id , edad , nombre , apellido FROM nombretabla WHERE id = 1 ;",
     "imagen": ""
   },
   "delete-consulta": {
     "titulo": "Delete",
     "explicacion": "assets/img/RD.png",
-    "pregunta": "",
-    "respuesta": "",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que elimine registros de una tabla basándote en una condición específica. Utiliza la sentencia DELETE FROM seguida del nombre de la tabla y agrega la cláusula WHERE para especificar la condición. donde esta sera la id = 1 ",
+    "respuesta": "DELETE FROM nombretabla  WHERE condicion ;",
     "imagen": ""
   },
   "primary-key-consulta": {

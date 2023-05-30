@@ -61,7 +61,7 @@ export class DragDropService {
     '<>',
     '>',
     '<',
-    'nommbreDatabase',
+    'nombreDatabase',
     'nombreTabla',
     'columna',
     'ID',
@@ -71,6 +71,9 @@ export class DragDropService {
     'Jhon',
     'Doe',
     '30',
+    '50',
+    '100',
+    '1',
 ];
 
   public drops: string[] = [];

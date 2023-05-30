@@ -301,6 +301,8 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     height: 400px;
+    text-align: justify;
+    font-size: 20px;
 }
 
 .Rbox {
@@ -342,3 +344,8 @@ body {
     justify-content: center;
 }
 
+.reto{
+    font-size: 35px;
+    text-align: center;
+    margin-top: -5px;
+}
