@@ -23,8 +23,8 @@
   "create-table": {
     "titulo": "Create Table",
     "explicacion": "assets/img/CT.png",
-    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL para crear una tabla con los siguientes campos: id (entero), edad (entero), nombre (cadena de caracteres) y apellido (cadena de caracteres). Utiliza la sentencia CREATE TABLE seguida del nombre que deseas asignarle a tu tabla y los nombres y tipos de datos de cada columna en el orden mencionado anteriormente. Asegúrate de utilizar los tipos de datos adecuados para cada columna. ¡Demuestra tus habilidades y crea una tabla con los campos id, edad, nombre y apellido para almacenar la información que necesites! ",
-    "respuesta": "crete table nombreTabla ( ID int , edad int , nombre varchar , apellido varchar ) ;",
+    "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL para crear una tabla con los siguientes campos: id (entero), edad (entero), nombre (cadena de caracteres) y apellido (cadena de caracteres) ambas cadenas deben tener un tamaño de 50. Utiliza la sentencia CREATE TABLE seguida del nombre que deseas asignarle a tu tabla y los nombres y tipos de datos de cada columna en el orden mencionado anteriormente. Asegúrate de utilizar los tipos de datos adecuados para cada columna. ¡Demuestra tus habilidades y crea una tabla con los campos id, edad, nombre y apellido para almacenar la información que necesites! ",
+    "respuesta": "crete table nombreTabla ( ID int , edad int , nombre varchar ( 50 ) , apellido varchar ( 50 ) ) ;",
     "imagen": ""
   },
   "drop-table": {
