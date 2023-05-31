@@ -39,6 +39,9 @@ export class LadingPageComponent {
       case 'vista9':
         this.router.navigate(['/home/subconsultas']);
         break;
+      case 'vista10':
+        this.router.navigate(['/home/pruebas']);
+        break;
     }
   }
 }
