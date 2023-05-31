@@ -25,168 +25,168 @@
     "explicacion": "assets/img/CT.png",
     "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL para crear una tabla con los siguientes campos: id (entero), edad (entero), nombre (cadena de caracteres) y apellido (cadena de caracteres) ambas cadenas deben tener un tamaño de 50. Utiliza la sentencia CREATE TABLE seguida del nombre que deseas asignarle a tu tabla y los nombres y tipos de datos de cada columna en el orden mencionado anteriormente. Asegúrate de utilizar los tipos de datos adecuados para cada columna. ¡Demuestra tus habilidades y crea una tabla con los campos id, edad, nombre y apellido para almacenar la información que necesites! ",
     "respuesta": "crete table nombreTabla ( ID int , edad int , nombre varchar ( 50 ) , apellido varchar ( 50 ) ) ;",
-    "imagen": ""
+    "imagen": "assets/img/bd-4.png"
   },
   "drop-table": {
     "titulo": "Drop",
     "explicacion": "assets/img/DT.png",
     "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar la consulta para eliminar una tabla utilizando el lenguaje SQL. Utiliza la sentencia DROP TABLE seguida del nombre de la tabla que deseas borrar. Recuerda ejecutar esta consulta en el contexto adecuado de tu sistema de gestión de bases de datos para lograr la eliminación exitosa de la tabla. ¡Demuestra tus habilidades y elimina la tabla que ya no necesitas!",
     "respuesta": "drop table nombreTabla ;",
-    "imagen": ""
+    "imagen": "assets/img/bd-5.png"
   },
   "insert-consulta": {
     "titulo": "Insert",
     "explicacion": "assets/img/RI.png",
     "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que inserte un registro en una tabla. utiliza la sentencia INSERT INTO seguida del nombre de la tabla y los valores que deseas insertar en el orden correspondiente ten en cuenta usa el numero 1 como id  y su edad sera 30.",
     "respuesta": "INSERT INTO nombretabla ( ID , edad , nombre , apellido ) VALUES ( 1 , 30 , Jhon , Doe ) ;",
-    "imagen": ""
+    "imagen": "assets/img/bd-6.png"
   },
   "select-consulta": {
     "titulo": "Select",
     "explicacion": "assets/img/RS.png",
     "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que realice una selección de datos en una tabla. Utiliza la sentencia SELECT seguida de los nombres de las columnas que deseas seleccionar: id, edad, nombre y apellido.",
     "respuesta": "SELECT id , edad , nombre , apellido FROM nombretabla ;",
-    "imagen": ""
+    "imagen": "assets/img/bd-7.png"
   },
   "where-consulta": {
     "titulo": "Where",
     "explicacion": "assets/img/RW.png",
     "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que realice una selección de datos en una tabla. Utiliza la sentencia SELECT seguida de los nombres de las columnas que deseas seleccionar: id, edad, nombre y apellido. Ten en cuenta que se utiliza la cláusula WHERE para filtrar los resultados y seleccionar solamente el registro con el id igual a 1. Si deseas seleccionar todos los registros, puedes omitir la cláusula WHERE.",
     "respuesta": "SELECT id , edad , nombre , apellido FROM nombretabla WHERE id = 1 ;",
-    "imagen": ""
+    "imagen": "assets/img/bd-8.png"
   },
   "delete-consulta": {
     "titulo": "Delete",
     "explicacion": "assets/img/RD.png",
     "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que elimine registros de una tabla basándote en una condición específica. Utiliza la sentencia DELETE FROM seguida del nombre de la tabla y agrega la cláusula WHERE para especificar la condición. donde esta sera la id = 1 ",
     "respuesta": "DELETE FROM nombretabla  WHERE condicion ;",
-    "imagen": ""
+    "imagen": "assets/img/bd-9.png"
   },
   "primary-key-consulta": {
     "titulo": "Primary Key ",
     "explicacion": "assets/img/PK.png",
     "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que cree una tabla con una llave primaria (PK) definida. Utiliza la sentencia CREATE TABLE seguida del nombre de la tabla y los nombres de las columnas con sus respectivos tipos de datos donde el orden seran id ,edad,nombre,apellido los dos primeros seran un INT y los dos siguientes como caracteres de tamaño 50. A continuación, agrega la especificación de la llave primaria utilizando la cláusula PRIMARY KEY. Recuerda que la llave primaria es un identificador único para cada registro en la tabla y se utiliza para garantizar la integridad y la unicidad de los datos. Asegúrate de elegir una columna adecuada como llave primaria en función de los requisitos de tu aplicación",
     "respuesta": "CREATE TABLE nombretabla (id INT PRIMARY KEY , edad INT , nombre VARCHAR ( 50 ) , apellido VARCHAR ( 50 ) ) ;",
-    "imagen": ""
+    "imagen": "assets/img/bd-10.png"
   },
   "foreign-key-consulta": {
     "titulo": "Foreign Key",
     "explicacion": "assets/img/FK.png",
     "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que cree una tabla con una llave foránea (FK) definida. Utiliza la sentencia CREATE TABLE seguida del nombre de la tabla y los nombres de las columnas con sus respectivos tipos de datos. A continuación, agrega la especificación de la llave foránea utilizando la cláusula FOREIGN KEY.Debes crear dos tablas: nombreTabla y nombreTabla2. En nombreTabla, define la columna Tabla1ID como INT y llave primaria, y la columna nombre como VARCHAR(50). En nombreTabla2, define Tabla2ID como INT y llave primaria, edad como INT, y agrega una llave foránea Tabla1ID que hace referencia a nombreTabla.",
     "respuesta": "CREATE TABLE nombreTabla ( Tabla1ID INT PRIMARY KEY , nombre VARCHAR ( 50 ) ) ;  CREATE TABLE nombreTabla2 ( Tabla2ID INT PRIMARY KEY , edad INT , Tabla1ID  INT ,  FOREIGN KEY ( Tabla1ID ) REFERENCES nombreTaba ( Tabla1ID ) ) ;",
-    "imagen": ""
+    "imagen": "assets/img/bd-11.png"
   },
   "entero-dato": {
     "titulo": "Enteros",
     "explicacion": "assets/img/DTINT.png",
     "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que cree una tabla con dos columnas una de id y otra de edad . Utiliza la sentencia CREATE TABLE seguida del nombre de la tabla y los nombres de las columnas con sus respectivos tipos de datos. ",
     "respuesta": "CREATE TABLE nombreTabla ( id INT , edad INT ) ;",
-    "imagen": ""
+    "imagen": "assets/img/bd-12.png"
   },
   "decimal-dato": {
     "titulo": "Decimal",
     "explicacion": "assets/img/DTD.png",
     "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que cree una tabla con dos columnas: una columna de precio de tipo decimal donde almacenaras números decimales con una precisión de hasta 10 dígitos en total y 2 dígitos después del punto decimal. y otra columna de puntuacion de tipo float. Utiliza la sentencia CREATE TABLE seguida del nombre de la tabla y los nombres de las columnas con sus respectivos tipos de datos.",
     "respuesta": "CREATE TABLE nombreTabla ( precio DECIMAL ( 10 , 2 ) , puntuacion FLOAT ) ;",
-    "imagen": ""
+    "imagen": "assets/img/bd-13.png"
   },
   "cadenas-dato": {
     "titulo": "Cadenas",
     "explicacion": "assets/img/DTS.png",
     "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que cree una tabla con dos columnas, una para el nombre y otra para el apellido, ambas de tipo string con un tamaño de 50. Utiliza la sentencia CREATE TABLE seguida del nombre de la tabla y los nombres de las columnas con sus respectivos tipos de datos.",
     "respuesta": "CREATE TABLE nombreTabla ( nombre VARCHAR ( 50 ) , apellido VARCHAR ( 50 ) ) ;",
-    "imagen": ""
+    "imagen": "assets/img/bd-14.png"
   },
   "fecha-dato": {
     "titulo": "Fecha",
     "explicacion": "assets/img/DTF.png",
     "pregunta": "¡Es hora de poner a prueba tus conocimientos! Ahora te desafío a generar una consulta SQL que cree una tabla con una columna de tipo date cuya variable sea fechaNacimieento. Utiliza la sentencia CREATE TABLE seguida del nombre de la tabla y el nombre de la columna con su respectivo tipo de dato.",
     "respuesta": "CREATE TABLE nombreTabla ( fechaNacimiento DATE ) ;",
-    "imagen": ""
+    "imagen": "assets/img/bd-15.png"
   },
   "order-consulta": {
     "titulo": "Orden",
     "explicacion": "assets/img/FTO.png",
     "pregunta": "",
     "respuesta": "",
-    "imagen": ""
+    "imagen": "assets/img/bd-16.png"
   },
   "operaciones-funciones": {
     "titulo": "Operaciones",
     "explicacion": "assets/img/FTOP.png",
     "pregunta": "",
     "respuesta": "",
-    "imagen": ""
+    "imagen": "assets/img/bd-17.png"
   },
   "agrupamiento-funciones": {
     "titulo": "Agrupamiento",
     "explicacion": "assets/img/FTA.png",
     "pregunta": "",
     "respuesta": "",
-    "imagen": ""
+    "imagen": "assets/img/bd-18.png"
   },
   "alter-table-drop": {
     "titulo": "Alter Table Drop",
     "explicacion": "assets/img/ATD.png",
     "pregunta": "",
     "respuesta": "",
-    "imagen": ""
+    "imagen": "assets/img/bd-19.png"
   },
   "alter-table-add": {
     "titulo": "Alter Table Add",
     "explicacion": "assets/img/ATA.png",
     "pregunta": "",
     "respuesta": "",
-    "imagen": ""
+    "imagen": "assets/img/bd-20.png"
   },
   "alter-table-rename": {
     "titulo": "Alter Table Rename",
     "explicacion": "assets/img/ATR.png",
     "pregunta": "",
     "respuesta": "",
-    "imagen": ""
+    "imagen": "assets/img/bd-21.png"
   },
   "inner-join": {
     "titulo": "Inner Join",
     "explicacion":  "assets/img/INJ.png",
     "pregunta": "",
     "respuesta": "",
-    "imagen": ""
+    "imagen": "assets/img/bd-22.png"
   },
   "right-join": {
     "titulo": "Right Join",
     "explicacion":  "assets/img/RJ.png",
     "pregunta": "",
     "respuesta": "",
-    "imagen": ""
+    "imagen": "assets/img/bd-23.png"
   },
   "left-join": {
     "titulo": "Left Join",
     "explicacion":  "assets/img/LJ.png",
     "pregunta": "",
     "respuesta": "",
-    "imagen": ""
+    "imagen": "assets/img/bd-24.png"
   },
   "udate-delete": {
     "titulo": "Update-Delete",
     "explicacion": "assets/img/update.png",
     "pregunta": "",
     "respuesta": "",
-    "imagen": "assets/img/crear.png"
+    "imagen": "assets/img/bd-25.png"
   },
   "exist-not-exist": {
     "titulo": "Exists’ Not Exists",
     "explicacion": "assets/img/ETE.png",
     "pregunta": "",
     "respuesta": "",
-    "imagen": ""
+    "imagen": "assets/img/bd-26.png"
   },
   "any-some-all": {
     "titulo": "Any-Some-All",
     "explicacion": "assets/img/ASA.png",
     "pregunta": "",
     "respuesta": "",
-    "imagen": ""
+    "imagen": "assets/img/bd-27.png"
   },
   "tips": {
     "sintaxis": "Asegúrate de que la consulta SQL esté correctamente escrita. Revisa si hay errores tipográficos.",
