@@ -6,13 +6,8 @@
     <div class="contenedor-4">
         <div class="contenedor-5">
             <div class="botones">
-                <p-button 
-                    pRipple label="Show Bd" 
-                    color="#BC66F7" 
-                    styleClass="p-button-raised " 
-                    icon="pi boton icon"
-                    iconPos="right"
-                    (click)="orderConsulta()">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right" (click)="orderConsulta()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/crear.png" />
                     </ng-template>
@@ -20,13 +15,8 @@
                 <p class="textI">Orden</p>
             </div>
             <div class="botones">
-                <p-button 
-                    pRipple label="Show Bd" 
-                    color="#BC66F7" 
-                    styleClass="p-button-raised " 
-                    icon="pi boton icon"
-                    iconPos="right"
-                    (click)="selectConsulta()">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right" (click)="selectConsulta()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/borrar.png" />
                     </ng-template>
@@ -34,13 +24,8 @@
                 <p class="textI">Operaciones</p>
             </div>
             <div class="botones">
-                <p-button 
-                    pRipple label="Show Bd" 
-                    color="#BC66F7" 
-                    styleClass="p-button-raised " 
-                    icon="pi boton icon"
-                    iconPos="right"
-                    (click)="whereConsulta()">
+                <p-button pRipple label="Show Bd" color="#BC66F7" styleClass="p-button-raised " icon="pi boton icon"
+                    iconPos="right" (click)="whereConsulta()">
                     <ng-template pTemplate="botonicon">
                         <img alt="boton icon" class="img4" src="assets/img/show.png" />
                     </ng-template>
@@ -80,24 +65,24 @@
             </div>
             <div class="contenedor-8">
                 <div class="grid-item">
-                    <img alt="boton icon" class="Tbox" style="width: 650px; height: 550px;"  [src]="data.explicacion" />
+                    <img alt="boton icon" class="Tbox" style="width: 650px; height: 550px;" [src]="data.explicacion" />
                 </div>
-                <div class="grid-item2">
-                    <img alt="boton icon" class="img4" [src]="data.imagen" />
-                </div>
- <div class="Qbox">
+                <div class="Qbox">
                     <p class="reto">Reto a resolver</p>
+                    <div class="grid-item2">
+                        <img alt="boton icon" class="img6" [src]="data.imagen" />
+                    </div>
                     <p>{{data.pregunta}}</p>
-                </div>            </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-<footer class="pie-pagina">
-    <div class="box">
-        <div>
-            <small>&copy; 2023 <b>Bases De Datos Para Novatos</b>- Todos los Derechos
-                Reservados.</small>
+    <footer class="pie-pagina">
+        <div class="box">
+            <div>
+                <small>&copy; 2023 <b>Bases De Datos Para Novatos</b>- Todos los Derechos
+                    Reservados.</small>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
