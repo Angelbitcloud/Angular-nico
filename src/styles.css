@@ -310,7 +310,6 @@ body {
     height: 600px;
     text-align: justify;
     font-size: 20px;
-
 }
 
 .Rbox {
@@ -357,4 +356,5 @@ body {
     font-size: 35px;
     text-align: center;
     margin-top: -5px;
+    margin-bottom: 70px;
 }
