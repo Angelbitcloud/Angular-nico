@@ -3,6 +3,7 @@ import { DragDropService } from '../../../core/model/service/drag-drop/drag-drop
 import { DataExplicacion } from 'src/app/core/model/interfaces/data-explicacion.interface';
 import { ObtenerDataService } from 'src/app/core/model/service/obtener-data/obtener-data-service';
 import { Tips } from 'src/app/core/model/interfaces/tips.interface';
+import { ConsultasSqlService } from 'src/app/core/model/service/consultas-bd/consultas-sql.service';
 
 
 
@@ -22,7 +23,8 @@ export class PruebasComponent {
 
   constructor(
     private dragDropService: DragDropService,
-    private obtenerDataService: ObtenerDataService
+    private obtenerDataService: ObtenerDataService,
+    private consultasSqlService: ConsultasSqlService
   ) {
     this.data = {
       titulo: '',
@@ -43,16 +45,22 @@ export class PruebasComponent {
   ngOnInit(): void {
     this.limpiarDrops();
   }
-
+  
   compareArrays(): void {
     let iguales: boolean;
     let dropRespuesta = this.drops.join(' ').toUpperCase();
     let jsonRespuesta = this.data.respuesta.toUpperCase();
-    [this.resComparar, iguales] = this.obtenerDataService.coparaRespuestas(dropRespuesta, jsonRespuesta);
-    if (iguales) {
-      this.tips = this.obtenerDataService.obtenerTips('tips');
-      //crear un componente modal para mostrar estas sugerencias
-    }
+    this.consultasSqlService.peticionSql(dropRespuesta).subscribe(
+      response => {
+        this.resComparar = response;
+        console.log('El response',response);
+      },
+      error => {
+        this.tips = this.obtenerDataService.obtenerTips('tips');
+        //crear un componente modal para mostrar estas sugerencias
+        console.error('El error', error);
+      }
+    );
   }
 
   public limpiarDrops(): void {
