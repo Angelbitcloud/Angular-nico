@@ -47,9 +47,7 @@ export class PruebasComponent {
   }
   
   compareArrays(): void {
-    let iguales: boolean;
     let dropRespuesta = this.drops.join(' ').toUpperCase();
-    let jsonRespuesta = this.data.respuesta.toUpperCase();
     this.consultasSqlService.peticionSql(dropRespuesta).subscribe(
       response => {
         this.resComparar = response;
