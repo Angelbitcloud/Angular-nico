@@ -47,6 +47,7 @@ export class PruebasComponent {
   }
   
   compareArrays(): void {
+    this.resComparar = '';
     let dropRespuesta = this.drops.join(' ').toUpperCase();
     this.consultasSqlService.peticionSql(dropRespuesta).subscribe(
       response => {

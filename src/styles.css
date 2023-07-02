@@ -253,7 +253,7 @@ body {
     padding: 5px;
     margin: 5px;
     border: 1px solid #000;
-
+    cursor: move;
 }
 /* modifica las cajas de texto de drop*/
 .block2 {
@@ -263,7 +263,7 @@ body {
     padding: 5px;
     margin: 2px;
     border: 1px solid #000;
-
+    cursor: move;
 }
 
 .block-1 {
